@@ -1,0 +1,14 @@
+How to log into the database.
+1. connect to the VPN.
+2. connect tot the database. 
+
+Database: 
+Location: hmhy-global.database.windows.net
+username: hmhy_admin@hmhy-global
+password: !Xc-4KJJ
+
+vpn: 
+Connection: PPTP 
+Location: 52.53.239.154
+username: hmhyAdmin
+password: !Xc-4KJJ
