@@ -1,0 +1,2 @@
+d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY.WinPhone\HMHY.WinPhone.csproj;neutral
+d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY\HMHY.csproj;neutral
