@@ -100,18 +100,8 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "HMHY.Droid.dll" comes first in this list. */
 		"HMHY.Droid.dll",
 		"HMHY.dll",
-		"System.Runtime.dll",
-		"System.Threading.dll",
-		"System.Collections.dll",
-		"System.Collections.Concurrent.dll",
-		"System.Diagnostics.Debug.dll",
-		"System.Reflection.dll",
-		"System.Linq.dll",
-		"System.Runtime.InteropServices.dll",
-		"System.Runtime.Extensions.dll",
-		"System.Reflection.Extensions.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};
-	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_24";
+	public static final String ApiPackageName = "Mono.Android.Platform.ApiLevel_23";
 }

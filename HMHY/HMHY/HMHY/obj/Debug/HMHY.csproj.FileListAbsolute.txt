@@ -5,3 +5,10 @@ d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY\obj\Debug\HMHY.dll
 d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY\obj\Debug\HMHY.pdb
 d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY\obj\Debug\HMHY.dll.mdb
 d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll.mdb
+C:\Users\emperorbyl\Documents\GitHub\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll
+C:\Users\emperorbyl\Documents\GitHub\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.pdb
+C:\Users\emperorbyl\Documents\GitHub\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.csprojResolveAssemblyReference.cache
+C:\Users\emperorbyl\Documents\GitHub\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.dll
+C:\Users\emperorbyl\Documents\GitHub\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.pdb
+C:\Users\emperorbyl\Documents\GitHub\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.dll.mdb
+C:\Users\emperorbyl\Documents\GitHub\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll.mdb
