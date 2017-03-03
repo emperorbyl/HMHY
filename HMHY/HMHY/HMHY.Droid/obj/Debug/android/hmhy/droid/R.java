@@ -14,7 +14,15 @@ public final class R {
         public static final int icon=0x7f020000;
     }
     public static final class id {
-        public static final int LoginButton=0x7f050001;
+        public static final int AddGoal=0x7f050001;
+        public static final int GoalDescription=0x7f050004;
+        public static final int endDate=0x7f050008;
+        public static final int endDateDate=0x7f050009;
+        public static final int goalDescriptionText=0x7f050005;
+        public static final int goalTitle=0x7f050002;
+        public static final int goalTitleText=0x7f050003;
+        public static final int startDate=0x7f050006;
+        public static final int startDateDate=0x7f050007;
         public static final int textView1=0x7f050000;
     }
     public static final class layout {

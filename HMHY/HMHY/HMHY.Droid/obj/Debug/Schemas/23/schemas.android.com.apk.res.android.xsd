@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>3/1/2017 11:29:19 AM</xs:documentation>
+    <xs:documentation>3/2/2017 5:37:34 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -16716,9 +16716,16 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@+id/" />
             <xs:enumeration value="@+id/checkBox1" />
-            <xs:enumeration value="@id/LoginButton" />
+            <xs:enumeration value="@id/AddGoal" />
+            <xs:enumeration value="@id/endDate" />
+            <xs:enumeration value="@id/endDateDate" />
+            <xs:enumeration value="@id/GoalDescription" />
+            <xs:enumeration value="@id/goalDescriptionText" />
+            <xs:enumeration value="@id/goalTitle" />
+            <xs:enumeration value="@id/goalTitleText" />
+            <xs:enumeration value="@id/startDate" />
+            <xs:enumeration value="@id/startDateDate" />
             <xs:enumeration value="@id/textView1" />
-            <xs:enumeration value="@id/UserNameText1" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
