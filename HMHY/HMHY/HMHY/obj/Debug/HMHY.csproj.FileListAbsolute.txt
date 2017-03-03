@@ -12,3 +12,7 @@ C:\Users\emperorbyl\Documents\GitHub\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.dll
 C:\Users\emperorbyl\Documents\GitHub\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.pdb
 C:\Users\emperorbyl\Documents\GitHub\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.dll.mdb
 C:\Users\emperorbyl\Documents\GitHub\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll.mdb

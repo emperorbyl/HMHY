@@ -52,11 +52,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="AndroidCalendar.cs" />
-=======
     <Compile Include="Main.cs" />
->>>>>>> 55a964654df8b9b936f9a4d8c8ed6180e3412d27
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

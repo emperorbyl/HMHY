@@ -34,3 +34,39 @@ d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY.WinPhone\obj\Debug
 d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY.WinPhone\obj\Debug\qualifiers.txt.intermediate
 d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY.WinPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY.WinPhone\obj\Debug\ProjectArchitectures.txt
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\App.xbf
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\MainPage.xbf
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\HMHY.WinPhone.xr.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\HMHY.WinPhone.exe
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\HMHY.WinPhone.pdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\resources.pri
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\AppxManifest.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\HMHY.WinPhone.build.appxrecipe
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\HMHY.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\HMHY.pdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\HMHY.WinPhone.csprojResolveAssemblyReference.cache
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\App.g.i.cs
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\App.g.cs
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\MainPage.g.i.cs
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\MainPage.g.cs
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\App.xaml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\MainPage.xaml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\App.xbf
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\MainPage.xbf
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\HMHY.WinPhone.exe
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\HMHY.WinPhone.pdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\HMHY.WinPhone.csproj.GenerateResource.Cache
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\priconfig.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\priconfig.xml.intermediate
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\layout.resfiles
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\layout.resfiles.intermediate
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\resources.resfiles
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\resources.resfiles.intermediate
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\pri.resfiles
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\pri.resfiles.intermediate
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\qualifiers.txt
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\ProjectArchitectures.txt

@@ -10,58 +10,58 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>8877204e-d7ab-4c2a-ba85-df930a47ce48</PackageIdentityName>
     <PackageIdentityPublisher>CN=joe</PackageIdentityPublisher>
-    <IntermediateOutputPath>d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY.WinPhone\obj\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY.WinPhone\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY.WinPhone\bin\Debug\HMHY.WinPhone.exe">
+    <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\HMHY.WinPhone.exe">
       <PackagePath>HMHY.WinPhone.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll">
+    <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll">
       <PackagePath>HMHY.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY.WinPhone\Assets\Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY.WinPhone\Assets\SmallLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\Assets\SmallLogo.scale-240.png">
       <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY.WinPhone\Assets\SplashScreen.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY.WinPhone\Assets\Square71x71Logo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY.WinPhone\Assets\StoreLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\Assets\StoreLogo.scale-240.png">
       <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY.WinPhone\Assets\WideLogo.scale-240.png">
+    <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\Assets\WideLogo.scale-240.png">
       <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY.WinPhone\bin\Debug\HMHY.WinPhone.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\HMHY.WinPhone.xr.xml">
       <PackagePath>HMHY.WinPhone.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY.WinPhone\bin\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY.WinPhone\bin\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="d:\xaber\documents\visual studio 2015\Projects\HMHY\HMHY\HMHY.WinPhone\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
