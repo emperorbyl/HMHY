@@ -2,10 +2,12 @@
 
 using Android.App;
 using Android.Content;
+using Android.Net;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Provider;
 
 namespace HMHY.Droid
 {
@@ -16,7 +18,11 @@ namespace HMHY.Droid
 
 		protected override void OnCreate (Bundle bundle)
 		{
+
+
 			base.OnCreate (bundle);
+
+         
 
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
@@ -35,9 +41,30 @@ namespace HMHY.Droid
             DateTime actualEndDate = DateTime.Now;
             DateTime.TryParse(endDate.ToString(), out actualEndDate);
 			button.Click += (object sender, EventArgs e) => {
-                LoginPage.addNewGoal(titleText.ToString(), descriptionText.ToString(), actualStartDate, actualEndDate);
+                var info = LoginPage.addNewGoal(titleText.ToString(), descriptionText.ToString(), actualStartDate, actualEndDate);
+                CreateEvent();
 			};
-		}
+
+           
+        }
+
+        public void CreateEvent()
+        {
+
+            AndroidCalendar userCalendar = new AndroidCalendar();
+
+            string[] sourceColumns = {
+                 CalendarContract.Events.InterfaceConsts.Title,
+                 CalendarContract.Events.InterfaceConsts.Dtstart };
+
+            int[] targetResources = {
+                Resource.Id.goalTitle,
+                  Resource.Id.startDate };
+
+            var adapter = new SimpleCursorAdapter(this, Resource.Layout.Main, userCalendar.GetEventIcursor(userCalendar.GetEventsUri(), userCalendar.GetUserCalendarEvents(), 0), sourceColumns, targetResources);
+
+            IListAdapter ListAdapter = adapter;
+        }
 	}
 }
 

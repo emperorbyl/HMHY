@@ -5,6 +5,7 @@ using System.Text;
 
 using Android.App;
 using Android.Content;
+using Android.Content.Res;
 using Android.Database;
 using Android.Net;
 using Android.OS;
@@ -97,8 +98,13 @@ namespace HMHY.Droid
             var userEvents = new UserEventInfo();
             userEvents.Id = CalendarContract.Events.InterfaceConsts.Id;
             userEvents.Title = CalendarContract.Events.InterfaceConsts.Title;
-            userEvents.StartDate = Convert.ToDateTime(CalendarContract.Events.InterfaceConsts.Dtstart);
-            userEvents.EndDate = Convert.ToDateTime(CalendarContract.Events.InterfaceConsts.Dtend);
+            DateTime startDate;
+            if(DateTime.TryParse(CalendarContract.Events.InterfaceConsts.Dtstart, out startDate))
+                userEvents.StartDate = startDate;
+
+            DateTime endDate;
+            if (DateTime.TryParse(CalendarContract.Events.InterfaceConsts.Dtend, out endDate))
+                userEvents.EndDate = endDate;
             
             return userEvents;
         }
@@ -112,11 +118,12 @@ namespace HMHY.Droid
         /// <returns></returns>
         public ICursor GetEventIcursor(Android.Net.Uri uri, UserEventInfo userInfo, int calId)
         {
+            var milliseconds = userInfo.StartDate.ToUniversalTime().Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalMilliseconds;
             string[] info =
             {
                 userInfo.Id,
                 userInfo.Title,
-                userInfo.StartDate.ToString()
+                milliseconds.ToString()
             };
             return Application.Context.ContentResolver.Query(uri, info, String.Format("calendar_id={0}", calId), null, "dtstart ASC");
         }
@@ -130,8 +137,10 @@ namespace HMHY.Droid
             var userReminders = new UserReminderInfo();
             userReminders.Id = CalendarContract.Reminders.InterfaceConsts.Id;
             userReminders.EventId = CalendarContract.Reminders.InterfaceConsts.EventId;
-            userReminders.StartTime = Convert.ToDateTime(CalendarContract.Reminders.InterfaceConsts.Dtstart);
-            userReminders.EndTime = Convert.ToDateTime(CalendarContract.Reminders.InterfaceConsts.Dtend);
+
+            // TODO Set these to try parse methods. 
+            //userReminders.StartTime = Convert.ToDateTime(CalendarContract.Reminders.InterfaceConsts.Dtstart);
+            //userReminders.EndTime = Convert.ToDateTime(CalendarContract.Reminders.InterfaceConsts.Dtend);
             userReminders.Description = CalendarContract.Reminders.InterfaceConsts.Description;
             userReminders.Count = CalendarContract.Reminders.InterfaceConsts.Count;
             userReminders.Title = CalendarContract.Reminders.InterfaceConsts.Title;
@@ -160,6 +169,33 @@ namespace HMHY.Droid
             return Application.Context.ContentResolver.Query(uri, info, String.Format("calendar_id={0}", calId), null, "dtstart ASC");
         }
 
+        /// <summary>
+        /// Method inserts an event into the users calendar. 
+        /// </summary>
+        /// <param name="title"></param>
+        /// <param name="startDate"></param>
+        /// <param name="description"></param>
+        /// <param name="endDate"></param>
+        public void AddEvent(string calId, string title, DateTime startDate, DateTime endDate, string description = "")
+        {
+            var eventValues = new ContentValues();
+            DateTime sDate = startDate;
+            DateTime eDate = endDate;
+            eventValues.Put(CalendarContract.Events.InterfaceConsts.CalendarId, calId);
+            eventValues.Put(CalendarContract.Events.InterfaceConsts.Title, title);
+            eventValues.Put(CalendarContract.Events.InterfaceConsts.Dtstart, sDate.ToUniversalTime().Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalMilliseconds.ToString());
+            eventValues.Put(CalendarContract.Events.InterfaceConsts.Dtend, eDate.ToUniversalTime().Subtract(new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalMilliseconds.ToString());
+            eventValues.Put(CalendarContract.Events.InterfaceConsts.Description, description);
+            eventValues.Put(CalendarContract.Events.InterfaceConsts.EventTimezone,"UTC");
+            eventValues.Put(CalendarContract.Events.InterfaceConsts.EventEndTimezone, "UTC");
+
+            var calendarUri = CalendarContract.Calendars.ContentUri;
+
+            var uri = Application.Context.ContentResolver.Insert(CalendarContract.Events.ContentUri, eventValues);
+        }
+
+        // Add method here to accept event object from the CORE library. 
+
     }
 
     /// <summary>
@@ -172,6 +208,11 @@ namespace HMHY.Droid
         public string AccountName { get; set; }
         public UserCalendarInfo() { }
         
+        public string[] GetInfoStringArray()
+        {
+            return new string[] { Id, DisplayName, AccountName };
+    
+        }
     }
 
     /// <summary>

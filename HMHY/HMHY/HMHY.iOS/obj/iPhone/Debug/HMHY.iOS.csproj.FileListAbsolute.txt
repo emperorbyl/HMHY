@@ -2,7 +2,6 @@ C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.iOS\bin\iPhone\Debug\HMHY.iOS.exe
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.iOS\bin\iPhone\Debug\HMHY.iOS.pdb
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.iOS\bin\iPhone\Debug\HMHY.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.iOS\bin\iPhone\Debug\HMHY.pdb
-C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.iOS\bin\iPhone\Debug\HMHY.dll.mdb
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items

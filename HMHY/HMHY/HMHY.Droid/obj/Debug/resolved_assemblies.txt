@@ -11,10 +11,10 @@ C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.X
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\mscorlib.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Runtime.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Diagnostics.Debug.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Threading.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Collections.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Collections.Concurrent.dll
-C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Diagnostics.Debug.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Reflection.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Linq.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Runtime.InteropServices.dll

@@ -107,5 +107,18 @@ C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.N
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\Mono.Data.Tds.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\System.ComponentModel.DataAnnotations.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\System.Data.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\System.Net.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\System.Numerics.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\System.Transactions.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\Mono.Data.Tds.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.ComponentModel.DataAnnotations.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Data.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Net.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Numerics.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Transactions.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\res\layout\event list view.xml
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\HMHY.Droid.dll.mdb
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\HMHY.Droid.dll.mdb
