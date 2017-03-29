@@ -121,4 +121,3 @@ C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.N
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Transactions.dll.mdb
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\res\layout\event list view.xml
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\HMHY.Droid.dll.mdb
-C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\HMHY.Droid.dll.mdb

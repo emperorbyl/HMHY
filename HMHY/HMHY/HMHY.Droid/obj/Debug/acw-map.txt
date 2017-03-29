@@ -1,4 +1,0 @@
-HMHY.Droid.MainActivity, HMHY.Droid;md5d9dfeeaebbd78a80e6c84a0636332a77.MainActivity
-HMHY.Droid.MainActivity, HMHY.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d9dfeeaebbd78a80e6c84a0636332a77.MainActivity
-HMHY.Droid.MainActivity;md5d9dfeeaebbd78a80e6c84a0636332a77.MainActivity
-hmhy.droid.MainActivity;md5d9dfeeaebbd78a80e6c84a0636332a77.MainActivity
