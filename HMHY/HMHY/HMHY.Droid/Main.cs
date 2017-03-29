@@ -2,6 +2,7 @@
 using System.Data;
 using Android.Database.Sqlite;
 using System.Data.SqlClient;
+using System.Collections.Generic;
 
 
 
@@ -43,7 +44,7 @@ namespace HMHY.Droid
             values.Put("3", startTimeA.ToString());
             values.Put("4", endTimeA.ToString());
             // Execute the query to inset into the phone database.
-            db.Insert(query, "Title, Description, StartTime, EndTime", values);
+            db.Insert(query, "id, Title, Description, StartTime, EndTime", values);
             // Add the goal as an event to the calendar.
             AndroidCalendar userCalendar = new AndroidCalendar();
             userCalendar.AddEvent("0", titleA, startTimeA, endTimeA,descriptionA);
@@ -68,13 +69,41 @@ namespace HMHY.Droid
             values.Put("1", message);
             values.Put("2", remindTime.ToString());
             // Execute the query to inset into the phone database.
-            db.Insert(query, "Id, Message, startTime", values);
+            db.Insert(query, "id, Message, startTime", values);
             // Create the reminder.
             UserReminderInfo info = new UserReminderInfo();
             info.Title = message;
             info.StartTime = remindTime;
             info.Id = "0";
             return info;
+        }
+
+        public static List<string> viewGoals(string userName)
+        {
+            List<string> allDaGoals = new List<string>();
+            bool next = false;
+            // Open the connection for the query.
+            SQLiteDatabase db = SQLiteDatabase.OpenDatabase("hmhy-global.database.windows.net", null, DatabaseOpenFlags.OpenReadwrite);
+            string query = @"SELECT gl.title, gl.goalDescription
+            FROM MainUser us
+            JOIN Goal gl ON gl.id = us.goalId
+            WHERE us.name LIKE @userName";
+            string []values;
+            values = new string[1];
+            values[0] = userName;
+            // Execute the query.
+            Android.Database.ICursor curse = db.RawQuery(query, values);
+            // Loop throughthe results of the query to get all of the goals.
+            while (!curse.IsLast && next)
+            {
+                string title = curse.GetString(0);
+                string desc = curse.GetString(1);
+                string goal = title + ", " + desc;
+                // Add the goals to a list to be returned.
+                allDaGoals.Add(goal);
+                next = curse.MoveToNext();
+            }
+            return allDaGoals;
         }
     }
 }
