@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="hmhyGlobalDbModelStoreContainer" CdmEntityContainer="hmhyGlobalDbEntities1">
+    <EntitySetMapping Name="MainUsers">
+      <EntityTypeMapping TypeName="hmhyGlobalDbModel.MainUser">
+        <MappingFragment StoreEntitySet="MainUser">
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="userPassword" ColumnName="userPassword" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
