@@ -3,7 +3,7 @@ using System.Data;
 using Android.Database.Sqlite;
 using System.Data.SqlClient;
 using System.Collections.Generic;
-
+using Windows.Storage;
 
 
 
@@ -14,7 +14,8 @@ namespace HMHY.Droid
 
     public static class LoginPage
     {
-        static string connection = "hmhy-global.database.windows.net";
+        static string connection = "Data Source=database.db";
+        static string phoneConnection = ApplicationData.Current.LocalFolder.Path.ToString();
         public static bool getUserCredentials(string username)
         {
             bool privledge = false;
@@ -34,7 +35,7 @@ namespace HMHY.Droid
             //TODO
             //Figure out how to access the database on a phone. This will be used instead of hmhy-global.
             // Open the connection for the query.
-            SQLiteDatabase db = SQLiteDatabase.OpenDatabase(connection, null, DatabaseOpenFlags.OpenReadwrite);
+            SQLiteDatabase db = SQLiteDatabase.OpenDatabase(phoneConnection, null, DatabaseOpenFlags.OpenReadwrite);
             string query = @"INSERT INTO Goal
             Values(id, @title, @description, @startTime, @endTime, reminderId)";
             // Add the values passed in to a Content Vales
@@ -45,7 +46,7 @@ namespace HMHY.Droid
             values.Put("3", startTimeA.ToString());
             values.Put("4", endTimeA.ToString());
             // Execute the query to inset into the phone database.
-            db.Insert(query, "id, Title, Description, StartTime, EndTime", values);
+            db.Insert(query, "id, title, goalDescription, StartTime, EndTime", values);
             // Add the goal as an event to the calendar.
             AndroidCalendar userCalendar = new AndroidCalendar();
             userCalendar.AddEvent("0", titleA, startTimeA, endTimeA,descriptionA);
@@ -61,7 +62,7 @@ namespace HMHY.Droid
         public static UserReminderInfo addNewReminder(string message, DateTime remindTime)
         {
             // Open the connection for the query.
-            SQLiteDatabase db = SQLiteDatabase.OpenDatabase(connection, null, DatabaseOpenFlags.OpenReadwrite);
+            SQLiteDatabase db = SQLiteDatabase.OpenDatabase(phoneConnection, null, DatabaseOpenFlags.OpenReadwrite);
             string query = @"INSERT INTO Reminder
             Values(id, @message, @startTime)";
             // Add the values passed in to a Content Vales
@@ -70,7 +71,7 @@ namespace HMHY.Droid
             values.Put("1", message);
             values.Put("2", remindTime.ToString());
             // Execute the query to inset into the phone database.
-            db.Insert(query, "id, Message, startTime", values);
+            db.Insert(query, "id, messageText, reminderTime", values);
             // Create the reminder.
             UserReminderInfo info = new UserReminderInfo();
             info.Title = message;
@@ -79,12 +80,28 @@ namespace HMHY.Droid
             return info;
         }
 
+        public static void addNewNote(string title, int userID, string body)
+        {
+            // Open the connection for the query.
+            SQLiteDatabase db = SQLiteDatabase.OpenDatabase(phoneConnection, null, DatabaseOpenFlags.OpenReadwrite);
+            string query = @"INSERT INTO Note
+            Values(id, @title, @userID, @body)";
+            // Add the values passed in to a Content Vales
+            Android.Content.ContentValues values = new Android.Content.ContentValues(4);
+            values.Put("0", "0");
+            values.Put("1", title);
+            values.Put("2", userID.ToString());
+            values.Put("3", body);
+            // Execute the query to inset into the phone database.
+            db.Insert(query, "id, title, userId, body", values);
+        }
+
         public static List<string> viewGoals(string userName)
         {
             List<string> allDaGoals = new List<string>();
             bool next = false;
             // Open the connection for the query.
-            SQLiteDatabase db = SQLiteDatabase.OpenDatabase(connection, null, DatabaseOpenFlags.OpenReadwrite);
+            SQLiteDatabase db = SQLiteDatabase.OpenDatabase(phoneConnection, null, DatabaseOpenFlags.OpenReadwrite);
             string query = @"SELECT gl.title, gl.goalDescription
             FROM MainUser us
             JOIN Goal gl ON gl.id = us.goalId
@@ -112,7 +129,7 @@ namespace HMHY.Droid
             List<string> allDaNotes = new List<string>();
             bool next = false;
             // Open the connection for the query.
-            SQLiteDatabase db = SQLiteDatabase.OpenDatabase(connection, null, DatabaseOpenFlags.OpenReadwrite);
+            SQLiteDatabase db = SQLiteDatabase.OpenDatabase(phoneConnection, null, DatabaseOpenFlags.OpenReadwrite);
             string query = @"SELECT nt.title, nt.body
             FROM Goal gl
             JOIN Note nt ON nt.id = us.noteId
@@ -138,7 +155,7 @@ namespace HMHY.Droid
         public static void addNewUser(string userName, bool priv)
         {
             // Open the connection for the query.
-            SQLiteDatabase db = SQLiteDatabase.OpenDatabase(connection, null, DatabaseOpenFlags.OpenReadwrite);
+            SQLiteDatabase db = SQLiteDatabase.OpenDatabase(phoneConnection, null, DatabaseOpenFlags.OpenReadwrite);
             string query = @"INSERT INTO Goal
             Values(id, @userName, @privlage, goalId, noteId, calendarId, userGroupId)";
             // Add the values passed in to a Content Vales
