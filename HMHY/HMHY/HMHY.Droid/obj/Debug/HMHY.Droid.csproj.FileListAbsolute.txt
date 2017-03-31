@@ -120,7 +120,6 @@ C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.N
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Numerics.dll.mdb
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Transactions.dll.mdb
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\res\layout\event list view.xml
-C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\HMHY.Droid.dll.mdb
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\HMHY.Droid.csprojResolveAssemblyReference.cache
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\HMHY.Droid.dll.config
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\HMHY.Droid.dll
@@ -183,4 +182,8 @@ C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\an
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Transactions.dll.mdb
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\HMHY.Droid.dll.mdb
-C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\HMHY.Droid.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\System.Windows.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\Windows.winmd
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\System.ObjectModel.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\System.ObjectModel.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\HMHY.Droid.dll.mdb
