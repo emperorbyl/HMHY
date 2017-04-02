@@ -3,8 +3,8 @@ How to log into the database.
 2. connect tot the database. 
 
 Database: 
-Location: hmhy-global.database.windows.net
-username: hmhy_admin@hmhy-global
+Location: hmhyglobaldb.csxgrhmw0ty8.us-west-1.rds.amazonaws.com
+username: hmhy_admin
 password: !Xc-4KJJ
 
 vpn: 
@@ -13,3 +13,9 @@ Location: 52.53.239.154
 username: hmhyAdmin
 password: !Xc-4KJJ
 
+VM
+Server Location:ec2-54-193-27-151.us-west-1.compute.amazonaws.com
+Username: Administrator
+Password: K@jE(&aw%Kx6ziAd(AP6pYwNXEqd3YM&1
+
+API Connection path http://ec2-54-67-67-41.us-west-1.compute.amazonaws.com/api/[table name]/[index]

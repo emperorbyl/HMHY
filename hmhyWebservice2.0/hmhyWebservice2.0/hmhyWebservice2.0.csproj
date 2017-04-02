@@ -92,11 +92,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Models\MainUser.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MainUser.edmx</DependentUpon>
-      <LastGenOutput>MainUser.Context.cs</LastGenOutput>
-    </Content>
     <Content Include="Models\MainUser.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>MainUser.edmx</DependentUpon>
@@ -110,11 +105,6 @@
     <Compile Include="DAL\HmhyGlobalDbContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Models\MainUser.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MainUser.Context.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\MainUser.cs">
       <DependentUpon>MainUser.tt</DependentUpon>
@@ -140,6 +130,7 @@
     <Content Include="Models\MainUser.edmx.diagram">
       <DependentUpon>MainUser.edmx</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\hmhy_webservice.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
