@@ -187,3 +187,4 @@ C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\Windows.winmd
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\System.ObjectModel.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\System.ObjectModel.xml
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\HMHY.Droid.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\HMHY.Droid.dll.mdb
