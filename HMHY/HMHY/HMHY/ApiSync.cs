@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RestSharp.Portable.HttpClient;
-using RestSharp.Portable.Deserializers;
-using RestSharp.Portable;
+
 namespace HMHY
 {
     /// <summary>
