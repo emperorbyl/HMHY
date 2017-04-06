@@ -25,8 +25,23 @@
     <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\HMHY.WinPhone.exe">
       <PackagePath>HMHY.WinPhone.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\HMHY.WinPhone.exe.config">
+      <PackagePath>HMHY.WinPhone.exe.config</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll">
       <PackagePath>HMHY.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\RestSharp.Portable.Core.dll">
+      <PackagePath>RestSharp.Portable.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\RestSharp.Portable.HttpClient.dll">
+      <PackagePath>RestSharp.Portable.HttpClient.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.Net.Http.Primitives.dll">
+      <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\Assets\Logo.scale-240.png">
       <PackagePath>Assets\Logo.scale-240.png</PackagePath>

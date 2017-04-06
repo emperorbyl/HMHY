@@ -14,6 +14,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
+using HMHY;
+
 
 namespace HMHY.Droid
 {
@@ -22,12 +24,13 @@ namespace HMHY.Droid
     /// </summary>
     class AndroidCalendar
     {
+        protected Core core;
         /// <summary>
         /// Constructor
         /// </summary>
         public AndroidCalendar()
         {
-             
+            core = new Core();    
 
         }
 
@@ -93,18 +96,18 @@ namespace HMHY.Droid
         /// Gets the events from the users calendar.
         /// </summary>
         /// <param name="calId"></param>
-        public UserEventInfo GetUserCalendarEvents()
+        public Event GetUserCalendarEvents()
         {      
-            var userEvents = new UserEventInfo();
-            userEvents.Id = CalendarContract.Events.InterfaceConsts.Id;
-            userEvents.Title = CalendarContract.Events.InterfaceConsts.Title;
+            var userEvents = new Event();
+            //userEvents.id = CalendarContract.Events.InterfaceConsts.Id;
+            userEvents.title = CalendarContract.Events.InterfaceConsts.Title;
             DateTime startDate;
             if(DateTime.TryParse(CalendarContract.Events.InterfaceConsts.Dtstart, out startDate))
-                userEvents.StartDate = startDate;
+                userEvents.eventTime = startDate;
 
-            DateTime endDate;
-            if (DateTime.TryParse(CalendarContract.Events.InterfaceConsts.Dtend, out endDate))
-                userEvents.EndDate = endDate;
+            //DateTime endDate;
+            //if (DateTime.TryParse(CalendarContract.Events.InterfaceConsts.Dtend, out endDate))
+            //    userEvents.EndDate = endDate;
             
             return userEvents;
         }

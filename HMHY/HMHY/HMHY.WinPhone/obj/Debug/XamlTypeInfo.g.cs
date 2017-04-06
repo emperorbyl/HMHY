@@ -529,5 +529,3 @@ namespace HMHY.WinPhone.HMHY_WinPhone_XamlTypeInfo
 }
 
 
-
-

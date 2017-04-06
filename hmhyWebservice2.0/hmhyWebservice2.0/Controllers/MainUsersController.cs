@@ -52,7 +52,7 @@ namespace hmhyWebservice2._0.Controllers
                 return BadRequest();
             }
 
-           // db.Entry(mainUser).State = EntityState.Modified;
+            db.Entry(mainUser).State = System.Data.Entity.EntityState.Modified;
 
             try
             {
@@ -88,21 +88,21 @@ namespace hmhyWebservice2._0.Controllers
             return CreatedAtRoute("DefaultApi", new { id = mainUser.userId }, mainUser);
         }
 
-        // DELETE: api/MainUsers/5
-        [ResponseType(typeof(MainUser))]
-        public IHttpActionResult DeleteMainUser(int id)
-        {
-            MainUser mainUser = db.MainUser.Find(id);
-            if (mainUser == null)
-            {
-                return NotFound();
-            }
+        //// DELETE: api/MainUsers/5
+        //[ResponseType(typeof(MainUser))]
+        //public IHttpActionResult DeleteMainUser(int id)
+        //{
+        //    MainUser mainUser = db.MainUser.Find(id);
+        //    if (mainUser == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            db.MainUser.Remove(mainUser);
-            db.SaveChanges();
+        //    db.MainUser.Remove(mainUser);
+        //    db.SaveChanges();
 
-            return Ok(mainUser);
-        }
+        //    return Ok(mainUser);
+        //}
 
         protected override void Dispose(bool disposing)
         {
