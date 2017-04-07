@@ -190,4 +190,15 @@ C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.X
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\System.Xml.Linq.dll.mdb
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\res\layout\eventlistview.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\System.Net.Http.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\System.Net.Http.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\HMHY.Droid.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\HMHY.Droid.dll.mdb

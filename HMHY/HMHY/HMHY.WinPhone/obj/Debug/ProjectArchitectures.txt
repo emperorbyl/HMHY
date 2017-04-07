@@ -1,2 +1,2 @@
-C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.WinPhone\HMHY.WinPhone.csproj;neutral
-C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY\HMHY.csproj;neutral
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\HMHY.WinPhone.csproj;neutral
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\HMHY.csproj;neutral

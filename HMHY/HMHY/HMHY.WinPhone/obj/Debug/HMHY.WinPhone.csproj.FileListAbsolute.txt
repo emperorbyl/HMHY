@@ -108,3 +108,11 @@ C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\qualifiers.txt.intermediate
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\ProjectArchitectures.txt
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
