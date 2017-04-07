@@ -7,11 +7,18 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
+
 using hmhyWebservice2._0.Models;
 using hmhyWebservice2._0.DAL;
+using System.Web.Http.Cors;
+using System.Xml;
+using System.Xml.Serialization;
+using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 
 namespace hmhyWebservice2._0.Controllers
 {
+    [EnableCors("*", "*", "GET,POST,PUT,DELETE")]
     [RoutePrefix("api/MainUser")]
     public class MainUserController : ApiController
     {
@@ -39,28 +46,42 @@ namespace hmhyWebservice2._0.Controllers
         }
 
         // PUT: api/MainUsers/5
-        [ResponseType(typeof(void))]
-        public IHttpActionResult PutMainUser(int id, MainUser mainUser)
+        [HttpPut]
+        [Route("")]
+        public IHttpActionResult ReturnXmlDocument(HttpRequestMessage request)
         {
-            if (!ModelState.IsValid)
+            if(!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != mainUser.userId)
+            if(request == null)
             {
-                return BadRequest();
+                return BadRequest("Null request");
             }
 
-           // db.Entry(mainUser).State = EntityState.Modified;
+            var doc = new XmlDocument();
+            var ser = new XmlSerializer(typeof(MainUser));
+            var user = new MainUser();
+
+            try
+            {
+                 user = (MainUser)ser.Deserialize(request.Content.ReadAsStreamAsync().Result);
+            }
+            catch(Exception e)
+            {
+                return BadRequest("Error parsing object. Stack Trace: " + e.StackTrace);
+            }
+
+            db.Entry(user).State = EntityState.Modified;
 
             try
             {
                 db.SaveChanges();
             }
-            catch (Exception)
+            catch (DbUpdateConcurrencyException)
             {
-                if (!MainUserExists(id))
+                if (!MainUserExists(user.userId))
                 {
                     return NotFound();
                 }
@@ -70,39 +91,68 @@ namespace hmhyWebservice2._0.Controllers
                 }
             }
 
-            return StatusCode(HttpStatusCode.NoContent);
+            return Ok(user);
+
         }
+       
 
         // POST: api/MainUsers
-        [ResponseType(typeof(MainUser))]
-        public IHttpActionResult PostMainUser(MainUser mainUser)
+        [HttpPost]
+        [Route("")]
+        public IHttpActionResult PostMainUser(HttpRequestMessage request)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            db.MainUser.Add(mainUser);
-            db.SaveChanges();
-
-            return CreatedAtRoute("DefaultApi", new { id = mainUser.userId }, mainUser);
-        }
-
-        // DELETE: api/MainUsers/5
-        [ResponseType(typeof(MainUser))]
-        public IHttpActionResult DeleteMainUser(int id)
-        {
-            MainUser mainUser = db.MainUser.Find(id);
-            if (mainUser == null)
+            if (request == null)
             {
-                return NotFound();
+                return BadRequest("Null request");
             }
 
-            db.MainUser.Remove(mainUser);
+            var doc = new XmlDocument();
+            var ser = new XmlSerializer(typeof(MainUser));
+            var user = new MainUser();
+
+            try
+            {
+                user = (MainUser)ser.Deserialize(request.Content.ReadAsStreamAsync().Result);
+            }
+            catch (Exception e)
+            {
+                return BadRequest("Error parsing object. Stack Trace: " + e.StackTrace);
+            }
+
+            var userExists = db.MainUser.Find(user.userId);
+            if(userExists != null)
+            {
+                return BadRequest("Record already exists");
+            }
+
+            
+
+            db.MainUser.Add(user);
             db.SaveChanges();
 
-            return Ok(mainUser);
+            return CreatedAtRoute("DefaultApi", new { id = user.userId }, user);
         }
+
+        //// DELETE: api/MainUsers/5
+        //[ResponseType(typeof(MainUser))]
+        //public IHttpActionResult DeleteMainUser(int id)
+        //{
+        //    MainUser mainUser = db.MainUser.Find(id);
+        //    if (mainUser == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    db.MainUser.Remove(mainUser);
+        //    db.SaveChanges();
+
+        //    return Ok(mainUser);
+        //}
 
         protected override void Dispose(bool disposing)
         {

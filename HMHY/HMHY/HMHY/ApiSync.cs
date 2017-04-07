@@ -26,6 +26,15 @@ namespace HMHY
 
         }
 
+        public MainUser GetUsers()
+        {
+            var con = new HttpRequestService();
+            var request = con.MakeConnection(core.MainUserApiGetRequest, CallType.GET);
+            var response = con.Client.Execute<MainUser>(request);
+            MainUser user = response.Result.Data;
+            return user;
+        }
+
         public MainUser GetUser()
         {
             var con = new HttpRequestService();
@@ -33,6 +42,10 @@ namespace HMHY
             var response = con.Client.Execute<MainUser>(request);
             MainUser user = response.Result.Data;
             return user;
+        }
+
+        public void UpdateUser()
+        {
 
         }
 

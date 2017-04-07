@@ -30,3 +30,6 @@ C:\Users\Xaber\Repos\HMHY\hmhyWebservice2.0\hmhyWebservice2.0\bin\System.Web.Htt
 C:\Users\Xaber\Repos\HMHY\hmhyWebservice2.0\hmhyWebservice2.0\obj\Release\hmhyWebservice2.0.dll
 C:\Users\Xaber\Repos\HMHY\hmhyWebservice2.0\hmhyWebservice2.0\obj\Release\hmhyWebservice2.0.pdb
 C:\Users\Xaber\Repos\HMHY\hmhyWebservice2.0\hmhyWebservice2.0\obj\Release\hmhyWebservice2.0.csprojResolveAssemblyReference.cache
+C:\Users\Xaber\Repos\HMHY\hmhyWebservice2.0\hmhyWebservice2.0\bin\System.Web.Cors.dll
+C:\Users\Xaber\Repos\HMHY\hmhyWebservice2.0\hmhyWebservice2.0\bin\System.Web.Http.Cors.dll
+C:\Users\Xaber\Repos\HMHY\hmhyWebservice2.0\hmhyWebservice2.0\bin\System.Web.Http.Cors.xml
