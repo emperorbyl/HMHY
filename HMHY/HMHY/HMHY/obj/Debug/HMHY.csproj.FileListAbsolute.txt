@@ -43,7 +43,4 @@ C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.Net.Http.Primitives.xm
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.csproj.App.config
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.dll.mdb
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll.mdb
-C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.dll.mdb
-C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll.mdb
-C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.dll.mdb
-C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll.mdb
+C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.csproj.App.config
