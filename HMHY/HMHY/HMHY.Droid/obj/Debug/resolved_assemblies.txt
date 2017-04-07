@@ -43,6 +43,7 @@ C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.T
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\Microsoft.CSharp.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\Mono.CSharp.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Runtime.Serialization.Xml.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Xml.XmlSerializer.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\FubarCoder.RestSharp.Portable.HttpClient.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Net.Http.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Net.Http.Primitives.dll

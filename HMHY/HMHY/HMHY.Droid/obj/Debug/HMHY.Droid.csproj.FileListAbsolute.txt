@@ -200,5 +200,13 @@ C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\FubarCoder.RestSharp.Po
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\Microsoft.CSharp.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\Mono.CSharp.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\System.Runtime.Serialization.Primitives.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\System.Runtime.Serialization.Xml.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\Microsoft.CSharp.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\Mono.CSharp.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Runtime.Serialization.Primitives.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Runtime.Serialization.Xml.dll.mdb
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\HMHY.Droid.dll.mdb
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\HMHY.Droid.dll.mdb

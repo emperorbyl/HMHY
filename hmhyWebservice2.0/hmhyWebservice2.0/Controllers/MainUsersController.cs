@@ -22,13 +22,13 @@ namespace hmhyWebservice2._0.Controllers
     [RoutePrefix("api/MainUser")]
     public class MainUserController : ApiController
     {
-        private HmhyGlobalDbContext db = new HmhyGlobalDbContext();
+        private hmhyGlobalDbEntities1 db = new hmhyGlobalDbEntities1();
 
         // GET: api/MainUser
         [Route("")]
         public IQueryable<MainUser> GetMainUsers()
         {
-            return db.MainUser;
+            return db.MainUsers;
         }
 
         // GET: api/MainUser/5
@@ -36,7 +36,7 @@ namespace hmhyWebservice2._0.Controllers
         [ResponseType(typeof(MainUser))]
         public IHttpActionResult GetMainUser(int id)
         {
-            MainUser mainUser = db.MainUser.Find(id);
+            MainUser mainUser = db.MainUsers.Find(id);
             if (mainUser == null)
             {
                 return NotFound();
@@ -48,7 +48,7 @@ namespace hmhyWebservice2._0.Controllers
         // PUT: api/MainUsers/5
         [HttpPut]
         [Route("")]
-        public IHttpActionResult ReturnXmlDocument(HttpRequestMessage request)
+        public IHttpActionResult PutUser(HttpRequestMessage request)
         {
             if(!ModelState.IsValid)
             {
@@ -124,7 +124,7 @@ namespace hmhyWebservice2._0.Controllers
                 return BadRequest("Error parsing object. Stack Trace: " + e.StackTrace);
             }
 
-            var userExists = db.MainUser.Find(user.userId);
+            var userExists = db.MainUsers.Find(user.userId);
             if(userExists != null)
             {
                 return BadRequest("Record already exists");
@@ -132,7 +132,7 @@ namespace hmhyWebservice2._0.Controllers
 
             
 
-            db.MainUser.Add(user);
+            db.MainUsers.Add(user);
             db.SaveChanges();
 
             return CreatedAtRoute("DefaultApi", new { id = user.userId }, user);
@@ -165,7 +165,7 @@ namespace hmhyWebservice2._0.Controllers
 
         private bool MainUserExists(int id)
         {
-            return db.MainUser.Count(e => e.userId == id) > 0;
+            return db.MainUsers.Count(e => e.userId == id) > 0;
         }
     }
 }

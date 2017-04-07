@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="hmhyGlobalDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Goal">
+    <Key>
+      <PropertyRef Name="goalId" />
+    </Key>
+    <Property Name="goalId" Type="int" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="30" />
+    <Property Name="Note" Type="varchar" MaxLength="100" />
+    <Property Name="Deadline" Type="datetime" />
+    <Property Name="Frequency" Type="int" />
+    <Property Name="GoalType" Type="int" />
+  </EntityType>
   <EntityType Name="MainUser">
     <Key>
       <PropertyRef Name="userId" />
@@ -9,6 +20,7 @@
     <Property Name="userPassword" Type="varchar" MaxLength="20" />
   </EntityType>
   <EntityContainer Name="hmhyGlobalDbModelStoreContainer">
+    <EntitySet Name="Goal" EntityType="Self.Goal" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="MainUser" EntityType="Self.MainUser" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

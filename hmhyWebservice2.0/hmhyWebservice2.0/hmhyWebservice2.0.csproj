@@ -100,43 +100,57 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Models\MainUser.tt">
+    <Content Include="Models\HmhyGlobalDb.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>MainUser.edmx</DependentUpon>
-      <LastGenOutput>MainUser1.cs</LastGenOutput>
+      <DependentUpon>HmhyGlobalDb.edmx</DependentUpon>
+      <LastGenOutput>HmhyGlobalDb.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\HmhyGlobalDb.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HmhyGlobalDb.edmx</DependentUpon>
+      <LastGenOutput>HmhyGlobalDb.cs</LastGenOutput>
     </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\GoalsController.cs" />
     <Compile Include="Controllers\MainUsersController.cs" />
     <Compile Include="DAL\HmhyGlobalDbContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Goal.cs">
+      <DependentUpon>HmhyGlobalDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HmhyGlobalDb.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HmhyGlobalDb.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HmhyGlobalDb.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HmhyGlobalDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HmhyGlobalDb.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HmhyGlobalDb.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\MainUser.cs">
-      <DependentUpon>MainUser.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\MainUser.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MainUser.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\MainUser1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MainUser.tt</DependentUpon>
+      <DependentUpon>HmhyGlobalDb.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-    <EntityDeploy Include="Models\MainUser.edmx">
+    <EntityDeploy Include="Models\HmhyGlobalDb.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>MainUser.Designer.cs</LastGenOutput>
+      <LastGenOutput>HmhyGlobalDb.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\MainUser.edmx.diagram">
-      <DependentUpon>MainUser.edmx</DependentUpon>
+    <Content Include="Models\HmhyGlobalDb.edmx.diagram">
+      <DependentUpon>HmhyGlobalDb.edmx</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\hmhy_webservice.pubxml" />
     <None Include="Web.Debug.config">

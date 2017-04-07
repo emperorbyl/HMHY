@@ -16,7 +16,7 @@ namespace hmhyWebservice2._0.DAL
         }
 
         public DbSet<MainUser> MainUser { get; set; }
-
+        public DbSet<Goal> Goal { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

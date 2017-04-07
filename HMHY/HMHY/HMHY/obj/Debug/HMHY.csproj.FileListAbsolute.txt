@@ -42,5 +42,15 @@ C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\FubarCoder.RestSharp.Portable
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.Xml.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.Core.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.ComponentModel.DataAnnotations.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.Xml.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.Core.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll.mdb
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.dll.mdb
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll.mdb

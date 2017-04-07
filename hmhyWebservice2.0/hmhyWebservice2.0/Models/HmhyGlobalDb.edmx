@@ -5,6 +5,17 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
       <Schema Namespace="hmhyGlobalDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Goal">
+          <Key>
+            <PropertyRef Name="goalId" />
+          </Key>
+          <Property Name="goalId" Type="int" Nullable="false" />
+          <Property Name="Title" Type="varchar" MaxLength="30" />
+          <Property Name="Note" Type="varchar" MaxLength="100" />
+          <Property Name="Deadline" Type="datetime" />
+          <Property Name="Frequency" Type="int" />
+          <Property Name="GoalType" Type="int" />
+        </EntityType>
         <EntityType Name="MainUser">
           <Key>
             <PropertyRef Name="userId" />
@@ -14,6 +25,7 @@
           <Property Name="userPassword" Type="varchar" MaxLength="20" />
         </EntityType>
         <EntityContainer Name="hmhyGlobalDbModelStoreContainer">
+          <EntitySet Name="Goal" EntityType="Self.Goal" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="MainUser" EntityType="Self.MainUser" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema>
@@ -21,6 +33,17 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="hmhyGlobalDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Goal">
+          <Key>
+            <PropertyRef Name="goalId" />
+          </Key>
+          <Property Name="goalId" Type="Int32" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Note" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Deadline" Type="DateTime" Precision="3" />
+          <Property Name="Frequency" Type="Int32" />
+          <Property Name="GoalType" Type="Int32" />
+        </EntityType>
         <EntityType Name="MainUser">
           <Key>
             <PropertyRef Name="userId" />
@@ -30,6 +53,7 @@
           <Property Name="userPassword" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityContainer Name="hmhyGlobalDbEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Goals" EntityType="Self.Goal" />
           <EntitySet Name="MainUsers" EntityType="Self.MainUser" />
         </EntityContainer>
       </Schema>
@@ -38,6 +62,18 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="hmhyGlobalDbModelStoreContainer" CdmEntityContainer="hmhyGlobalDbEntities1">
+          <EntitySetMapping Name="Goals">
+            <EntityTypeMapping TypeName="hmhyGlobalDbModel.Goal">
+              <MappingFragment StoreEntitySet="Goal">
+                <ScalarProperty Name="goalId" ColumnName="goalId" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="Deadline" ColumnName="Deadline" />
+                <ScalarProperty Name="Frequency" ColumnName="Frequency" />
+                <ScalarProperty Name="GoalType" ColumnName="GoalType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="MainUsers">
             <EntityTypeMapping TypeName="hmhyGlobalDbModel.MainUser">
               <MappingFragment StoreEntitySet="MainUser">

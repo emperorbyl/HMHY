@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Xaber\Source\Repos\hmhyWebService\hmhyWebservice2.0\hmhyWebservice2.0\Models\MainUser.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\Xaber\Repos\HMHY\hmhyWebservice2.0\hmhyWebservice2.0\Models\HmhyGlobalDb.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

@@ -1,6 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="hmhyGlobalDbModelStoreContainer" CdmEntityContainer="hmhyGlobalDbEntities1">
+    <EntitySetMapping Name="Goals">
+      <EntityTypeMapping TypeName="hmhyGlobalDbModel.Goal">
+        <MappingFragment StoreEntitySet="Goal">
+          <ScalarProperty Name="goalId" ColumnName="goalId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Deadline" ColumnName="Deadline" />
+          <ScalarProperty Name="Frequency" ColumnName="Frequency" />
+          <ScalarProperty Name="GoalType" ColumnName="GoalType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="MainUsers">
       <EntityTypeMapping TypeName="hmhyGlobalDbModel.MainUser">
         <MappingFragment StoreEntitySet="MainUser">

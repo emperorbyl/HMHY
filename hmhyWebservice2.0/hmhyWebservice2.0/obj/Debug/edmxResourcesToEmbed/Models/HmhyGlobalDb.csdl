@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="hmhyGlobalDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Goal">
+    <Key>
+      <PropertyRef Name="goalId" />
+    </Key>
+    <Property Name="goalId" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Note" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Deadline" Type="DateTime" Precision="3" />
+    <Property Name="Frequency" Type="Int32" />
+    <Property Name="GoalType" Type="Int32" />
+  </EntityType>
   <EntityType Name="MainUser">
     <Key>
       <PropertyRef Name="userId" />
@@ -9,6 +20,7 @@
     <Property Name="userPassword" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityContainer Name="hmhyGlobalDbEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Goals" EntityType="Self.Goal" />
     <EntitySet Name="MainUsers" EntityType="Self.MainUser" />
   </EntityContainer>
 </Schema>
