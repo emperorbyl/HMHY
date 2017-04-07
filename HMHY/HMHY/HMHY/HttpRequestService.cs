@@ -15,8 +15,7 @@ using RestSharp.Portable;
 using RestSharp.Portable.HttpClient;
 
 namespace HMHY
-{
-    public enum CallType { GET, PUT, POST};
+{ 
     class HttpRequestService
     {
         public RestClient Client;
@@ -28,14 +27,15 @@ namespace HMHY
             Client.BaseUrl = core.ApiLocation;
         }
 
-        public RestRequest MakeConnection(string path, CallType connectionType)
+        public RestRequest MakeConnection(string path, Method connectionType)
         {
             RestRequest request;
             string result = string.Empty;
             try
             {          
-                request = new RestRequest("MainUser");
+                request = new RestRequest(path);
                 request.AddHeader("Accept", "Application/xml");
+                request.Method = connectionType;
             }
             catch (Exception e) { return null; }
 
