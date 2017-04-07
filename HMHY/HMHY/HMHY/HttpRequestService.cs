@@ -10,9 +10,6 @@ using System.Net.Http.Headers;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.Serialization;
-using Windows.Data.Xml.Dom;
-using Windows.Data.Xml;
-using Windows.Data.Xml.Xsl;
 
 using RestSharp.Portable;
 using RestSharp.Portable.HttpClient;
