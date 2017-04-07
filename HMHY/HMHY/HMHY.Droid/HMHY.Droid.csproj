@@ -75,7 +75,7 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Properties\AboutAssets.txt" />
-    <AndroidResource Include="Resources\layout\Event List View.axml">
+    <AndroidResource Include="Resources\layout\EventListView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

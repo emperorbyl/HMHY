@@ -9,6 +9,7 @@ C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.d
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Net.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Xml.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\mscorlib.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\RestSharp.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Windows.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\Windows.winmd
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Runtime.dll
@@ -28,4 +29,5 @@ C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.S
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Numerics.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\Mono.Data.Tds.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Transactions.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.Xml.Linq.dll
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\System.ObjectModel.dll

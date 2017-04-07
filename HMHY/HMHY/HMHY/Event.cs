@@ -2,7 +2,7 @@
 
 namespace HMHY
 {
-    public class Event
+    class Event
     {
 
         public string title { get; set; }

@@ -100,6 +100,7 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "HMHY.Droid.dll" comes first in this list. */
 		"HMHY.Droid.dll",
 		"HMHY.dll",
+		"RestSharp.dll",
 		"Windows.winmd",
 	};
 	public static final String[] Dependencies = new String[]{
