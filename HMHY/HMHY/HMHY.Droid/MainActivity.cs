@@ -43,8 +43,11 @@ namespace HMHY.Droid
 			button.Click += (object sender, EventArgs e) => {
                 var info = LoginPage.addNewGoal(titleText.ToString(), descriptionText.ToString(), actualStartDate, actualEndDate);
                 CreateEvent();
-			};
-
+                string newGoal = titleText.ToString() + ", " + descriptionText.ToString() + ", " + actualStartDate + ", " + actualEndDate;
+                TextView goalView = FindViewById<TextView>(Resource.Id.textView2);
+                goalView.Append(newGoal);
+                goalView.Append(pullGoals());
+            };
            
         }
 
@@ -64,6 +67,16 @@ namespace HMHY.Droid
             var adapter = new SimpleCursorAdapter(this, Resource.Layout.Main, userCalendar.GetEventIcursor(userCalendar.GetEventsUri(), userCalendar.GetUserCalendarEvents(), 0), sourceColumns, targetResources);
 
             IListAdapter ListAdapter = adapter;
+        }
+
+        public string pullGoals()
+        {
+            string user = "emperorbyl";
+            string allGoals = "";
+            System.Collections.Generic.List<string> goalList = LoginPage.viewGoals(user);
+            foreach (string goal in goalList)
+                allGoals += goal;
+            return allGoals;
         }
 	}
 }

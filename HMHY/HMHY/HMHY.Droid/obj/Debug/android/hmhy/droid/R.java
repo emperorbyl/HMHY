@@ -26,6 +26,7 @@ public final class R {
         public static final int startDate=0x7f050008;
         public static final int startDateDate=0x7f050009;
         public static final int textView1=0x7f050002;
+        public static final int textView2=0x7f05000c;
     }
     public static final class layout {
         public static final int eventlistview=0x7f030000;
