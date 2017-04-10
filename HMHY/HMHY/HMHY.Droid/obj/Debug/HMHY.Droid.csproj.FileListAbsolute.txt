@@ -139,7 +139,6 @@ C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\FubarCoder.RestSharp.Po
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\FubarCoder.RestSharp.Portable.Core.xml
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.xml
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\HMHY.Droid.dll.mdb
-C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\HMHY.Droid.csprojResolveAssemblyReference.cache
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\HMHY.Droid.dll.config
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\HMHY.Droid.dll
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\HMHY.Droid.pdb
@@ -163,6 +162,7 @@ C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\Sy
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\Newtonsoft.Json.xml
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\System.Net.Http.xml
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\HMHY.Droid.csprojResolveAssemblyReference.cache
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\HMHY.Droid.dll
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\HMHY.Droid.pdb
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\bin\HMHY.Droid.apk
