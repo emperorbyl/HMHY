@@ -31,17 +31,20 @@ namespace HMHY.Droid
 			// and attach an event to it
 			Button button = FindViewById<Button> (Resource.Id.AddGoal);
             // Get all of the information entered by the user.
-            EditText titleText = FindViewById<EditText>(Resource.Id.goalTitleText);
-            EditText descriptionText = FindViewById<EditText>(Resource.Id.goalDescriptionText);
-            EditText startDate = FindViewById<EditText>(Resource.Id.startDateDate);
-            EditText endDate = FindViewById<EditText>(Resource.Id.endDateDate);
-            // Convert the text to DateTimes.
-            DateTime actualStartDate = DateTime.Now;
-            DateTime.TryParse(startDate.ToString(), out actualStartDate);
-            DateTime actualEndDate = DateTime.Now;
-            DateTime.TryParse(endDate.ToString(), out actualEndDate);
-			button.Click += (object sender, EventArgs e) => {
-                var info = LoginPage.addNewGoal(titleText.ToString(), descriptionText.ToString(), actualStartDate, actualEndDate);
+
+            ;
+            
+            button.Click += (object sender, EventArgs e) => {
+                EditText titleText = FindViewById<EditText>(Resource.Id.goalTitleText);
+                EditText descriptionText = FindViewById<EditText>(Resource.Id.goalDescriptionText);
+                EditText startDate = FindViewById<EditText>(Resource.Id.startDateDate);
+                EditText endDate = FindViewById<EditText>(Resource.Id.endDateDate);
+                // Convert the text to DateTimes.
+                DateTime actualStartDate = DateTime.Now;
+                DateTime.TryParse(startDate.Text.ToString(), out actualStartDate);
+                DateTime actualEndDate = DateTime.Now;
+                DateTime.TryParse(endDate.Text.ToString(), out actualEndDate);
+                var info = LoginPage.addNewGoal(titleText.Text.ToString(), descriptionText.Text.ToString(), actualStartDate, actualEndDate);
                 CreateEvent();
                 string newGoal = titleText.ToString() + ", " + descriptionText.ToString() + ", " + actualStartDate + ", " + actualEndDate;
                 TextView goalView = FindViewById<TextView>(Resource.Id.textView2);
@@ -50,6 +53,7 @@ namespace HMHY.Droid
             };
            
         }
+        
 
         public void CreateEvent()
         {

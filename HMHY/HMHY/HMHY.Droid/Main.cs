@@ -15,7 +15,11 @@ namespace HMHY.Droid
     public static class LoginPage
     {
         static string connection = "Data Source=database.db";
+        static string dbConnection;
         static string phoneConnection = ApplicationData.Current.LocalFolder.Path.ToString();
+
+        static LoginPage() { dbConnection = ""; }
+
         public static bool getUserCredentials(string username)
         {
             bool privledge = false;
