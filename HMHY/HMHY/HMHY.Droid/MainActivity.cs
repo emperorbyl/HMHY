@@ -22,7 +22,7 @@ namespace HMHY.Droid
 
 			base.OnCreate (bundle);
 
-         
+            
 
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
@@ -64,6 +64,18 @@ namespace HMHY.Droid
             var adapter = new SimpleCursorAdapter(this, Resource.Layout.Main, userCalendar.GetEventIcursor(userCalendar.GetEventsUri(), userCalendar.GetUserCalendarEvents(), 0), sourceColumns, targetResources);
 
             IListAdapter ListAdapter = adapter;
+        }
+
+        private void SyncDatabase()
+        {
+            /* Check for recent user password change. If no user is stored in the local db, prompt login
+            *
+            * Check for recent goal changes to the users goal since last login
+            * 
+            * Update other changes
+            * 
+            * Changes on the phone trump local changes
+            */
         }
 	}
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Xml.Serialization;
 
@@ -15,6 +16,8 @@ namespace HMHY
         public enum FREQUENCY { hourly, daily, weekly }  //just for now
         private int id { get; set; }
         private enum TYPE { making, breaking }
+        public int reminderId { get; set; }
+        public DateTime startDate { get; set; }
 
         public void createGoal(string title, string description, DateTime deadline) { }
         public void setTitle(string title) { }
@@ -46,20 +49,6 @@ namespace HMHY
         public DateTime deadline { get; set; }
         public enum FREQUENCY { hourly, daily, weekly }
         [Required]
-        [XmlElement("Frequency")]
-        public virtual int FrequencyId { get; set; }
-        [EnumDataType(typeof(FREQUENCY))]
-        public FREQUENCY Frequency
-        {
-            get
-            {
-                return (FREQUENCY)this.FrequencyId;
-            }
-            set
-            {
-                this.FrequencyId = (int)value;
-            }
-        }
         [XmlElement("goalId")]
         public int id { get; set; }
         public enum TYPE { making, breaking }
@@ -78,5 +67,9 @@ namespace HMHY
                 this.TypeId = (int)value;
             }
         }
+        [XmlElement("ReminderId")]
+        public int reminderId { get; set; }
+        [XmlElement("StartDate")]
+        public DateTime startDate { get; set; }
     }
 }

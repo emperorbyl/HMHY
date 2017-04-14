@@ -18,7 +18,8 @@ namespace hmhyWebservice2._0.Models
         public string Title { get; set; }
         public string Note { get; set; }
         public Nullable<System.DateTime> Deadline { get; set; }
-        public Nullable<int> Frequency { get; set; }
         public Nullable<int> GoalType { get; set; }
+        public Nullable<System.DateTime> StartDate { get; set; }
+        public Nullable<int> ReminderId { get; set; }
     }
 }

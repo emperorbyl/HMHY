@@ -20,70 +20,82 @@ namespace HMHY
 
         public T GetTable<T>()
         {
-            var con = new HttpRequestService();
-            var request = con.MakeConnection(core.MainUserApiGetRequest, Method.GET);
-            var response = con.Client.Execute<T>(request);
-            T list = response.Result.Data;
-            return list;
+            try
+            {
+                var con = new HttpRequestService();
+                var request = con.MakeConnection(core.MainUserApiGetRequest, Method.GET);
+                var response = con.Client.Execute<T>(request);
+                T list = response.Result.Data;
+                return list;
+            }
+            catch(Exception e) { throw; }
         }
 
         public T GetRow<T>()
         {
-            var con = new HttpRequestService();
-            var request = con.MakeConnection(core.MainUserApiGetRequest, Method.GET);
-            var response = con.Client.Execute<T>(request);
-            T row = response.Result.Data;
-            return row;
+            try
+            {
+                var con = new HttpRequestService();
+                var request = con.MakeConnection(core.MainUserApiGetRequest, Method.GET);
+                var response = con.Client.Execute<T>(request);
+                T row = response.Result.Data;
+                return row;
+            }
+            catch(Exception e) { throw; }
         }
 
         public bool UpdateRow<T>(T row)
         {
-            var con = new HttpRequestService();
-            var request = con.MakeConnection(core.MainUserApiGetRequest, Method.PUT);
-            var ser = new XmlSerializer(typeof(T));
-            var strWtr = new StringWriter();
-            Task<IRestResponse> response;
-            using (XmlWriter writer = XmlWriter.Create(strWtr))
+            try
             {
-                ser.Serialize(writer, row);
-                var xml = strWtr.ToString();
-                request.AddXmlBody(xml);
-                response = con.Client.Execute(request);
-            }
-            
-            if(!response.IsCompleted || response.IsCanceled || response.IsFaulted)
-            {
-                return false;
-            }
+                var con = new HttpRequestService();
+                var request = con.MakeConnection(core.MainUserApiGetRequest, Method.PUT);
+                var ser = new XmlSerializer(typeof(T));
+                var strWtr = new StringWriter();
+                Task<IRestResponse> response;
+                using (XmlWriter writer = XmlWriter.Create(strWtr))
+                {
+                    ser.Serialize(writer, row);
+                    var xml = strWtr.ToString();
+                    request.AddXmlBody(xml);
+                    response = con.Client.Execute(request);
+                }
 
-            return true;
+                if (!response.IsCompleted || response.IsCanceled || response.IsFaulted)
+                {
+                    return false;
+                }
+
+                return true;
+            }
+            catch(Exception e) { return false; }
         }
 
         public bool AddRow<T>(T row)
         {
-            var con = new HttpRequestService();
-            var request = con.MakeConnection(core.MainUserApiGetRequest, Method.POST);
-            var ser = new XmlSerializer(typeof(T));
-            var strWtr = new StringWriter();
-            Task<IRestResponse> response;
-            using (XmlWriter writer = XmlWriter.Create(strWtr))
+            try
             {
-                ser.Serialize(writer, row);
-                var xml = strWtr.ToString();
-                request.AddXmlBody(xml);
-                response = con.Client.Execute(request);
-            }
+                var con = new HttpRequestService();
+                var request = con.MakeConnection(core.MainUserApiGetRequest, Method.POST);
+                var ser = new XmlSerializer(typeof(T));
+                var strWtr = new StringWriter();
+                Task<IRestResponse> response;
+                using (XmlWriter writer = XmlWriter.Create(strWtr))
+                {
+                    ser.Serialize(writer, row);
+                    var xml = strWtr.ToString();
+                    request.AddXmlBody(xml);
+                    response = con.Client.Execute(request);
+                }
 
-            if (!response.IsCompleted || response.IsCanceled || response.IsFaulted)
-            {
-                return false;
-            }
+                if (!response.IsCompleted || response.IsCanceled || response.IsFaulted)
+                {
+                    return false;
+                }
 
-            return true;
+                return true;
+            }
+            catch(Exception e) { return false; }
         }
-
-
-
-
     }
 }

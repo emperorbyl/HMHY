@@ -8,8 +8,9 @@
     <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
     <Property Name="Note" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
     <Property Name="Deadline" Type="DateTime" Precision="3" />
-    <Property Name="Frequency" Type="Int32" />
     <Property Name="GoalType" Type="Int32" />
+    <Property Name="StartDate" Type="DateTime" Precision="3" />
+    <Property Name="ReminderId" Type="Int32" />
   </EntityType>
   <EntityType Name="MainUser">
     <Key>
