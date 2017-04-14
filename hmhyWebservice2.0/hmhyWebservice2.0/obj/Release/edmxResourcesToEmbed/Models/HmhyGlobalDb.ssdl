@@ -8,9 +8,8 @@
     <Property Name="Title" Type="varchar" MaxLength="30" />
     <Property Name="Note" Type="varchar" MaxLength="100" />
     <Property Name="Deadline" Type="datetime" />
+    <Property Name="Frequency" Type="int" />
     <Property Name="GoalType" Type="int" />
-    <Property Name="StartDate" Type="datetime" />
-    <Property Name="ReminderId" Type="int" />
   </EntityType>
   <EntityType Name="MainUser">
     <Key>

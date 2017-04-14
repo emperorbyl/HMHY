@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="hmhyGlobalDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="hmhyGlobalDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Goal">
           <Key>
             <PropertyRef Name="goalId" />
@@ -13,8 +13,9 @@
           <Property Name="Title" Type="varchar" MaxLength="30" />
           <Property Name="Note" Type="varchar" MaxLength="100" />
           <Property Name="Deadline" Type="datetime" />
-          <Property Name="Frequency" Type="int" />
           <Property Name="GoalType" Type="int" />
+          <Property Name="StartDate" Type="datetime" />
+          <Property Name="ReminderId" Type="int" />
         </EntityType>
         <EntityType Name="MainUser">
           <Key>
@@ -28,8 +29,7 @@
           <EntitySet Name="Goal" EntityType="Self.Goal" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="MainUser" EntityType="Self.MainUser" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="hmhyGlobalDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -41,8 +41,9 @@
           <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="Note" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <Property Name="Deadline" Type="DateTime" Precision="3" />
-          <Property Name="Frequency" Type="Int32" />
           <Property Name="GoalType" Type="Int32" />
+          <Property Name="StartDate" Type="DateTime" Precision="3" />
+          <Property Name="ReminderId" Type="Int32" />
         </EntityType>
         <EntityType Name="MainUser">
           <Key>
@@ -65,11 +66,12 @@
           <EntitySetMapping Name="Goals">
             <EntityTypeMapping TypeName="hmhyGlobalDbModel.Goal">
               <MappingFragment StoreEntitySet="Goal">
+                <ScalarProperty Name="ReminderId" ColumnName="ReminderId" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
                 <ScalarProperty Name="goalId" ColumnName="goalId" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="Note" ColumnName="Note" />
                 <ScalarProperty Name="Deadline" ColumnName="Deadline" />
-                <ScalarProperty Name="Frequency" ColumnName="Frequency" />
                 <ScalarProperty Name="GoalType" ColumnName="GoalType" />
               </MappingFragment>
             </EntityTypeMapping>

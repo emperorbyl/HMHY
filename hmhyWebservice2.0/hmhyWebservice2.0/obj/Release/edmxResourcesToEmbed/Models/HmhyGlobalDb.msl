@@ -4,12 +4,11 @@
     <EntitySetMapping Name="Goals">
       <EntityTypeMapping TypeName="hmhyGlobalDbModel.Goal">
         <MappingFragment StoreEntitySet="Goal">
-          <ScalarProperty Name="ReminderId" ColumnName="ReminderId" />
-          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
           <ScalarProperty Name="goalId" ColumnName="goalId" />
           <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="Note" ColumnName="Note" />
           <ScalarProperty Name="Deadline" ColumnName="Deadline" />
+          <ScalarProperty Name="Frequency" ColumnName="Frequency" />
           <ScalarProperty Name="GoalType" ColumnName="GoalType" />
         </MappingFragment>
       </EntityTypeMapping>
