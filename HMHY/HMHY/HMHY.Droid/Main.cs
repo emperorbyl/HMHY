@@ -4,6 +4,9 @@ using Android.Database.Sqlite;
 using System.Data.SqlClient;
 using System.Collections.Generic;
 using Windows.Storage;
+using Xamarin.Forms;
+
+
 
 
 
@@ -16,9 +19,12 @@ namespace HMHY.Droid
     {
         static string connection = "Data Source=database.db";
         static string dbConnection;
-        static string phoneConnection = ApplicationData.Current.LocalFolder.Path.ToString();
 
-        static LoginPage() { dbConnection = ""; }
+        static string phoneConnection = DependencyService.Get<PhoneDB>().getLocalFilePath("SQLite.db3");
+        static string local = "../GitHub/HMHY/HMHY/";
+        //static string appConnection = Windows.ApplicationModel.Package.Current.InstalledLocation.ToString();
+
+        static LoginPage() { dbConnection = "hmhy-global.database.windows.net"; }
 
         public static bool getUserCredentials(string username)
         {

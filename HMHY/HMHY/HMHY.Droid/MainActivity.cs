@@ -21,8 +21,7 @@ namespace HMHY.Droid
 
 
 			base.OnCreate (bundle);
-
-         
+            Xamarin.Forms.Forms.Init(this, bundle);  
 
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);
@@ -31,25 +30,33 @@ namespace HMHY.Droid
 			// and attach an event to it
 			Button button = FindViewById<Button> (Resource.Id.AddGoal);
             // Get all of the information entered by the user.
-
-            ;
             
             button.Click += (object sender, EventArgs e) => {
-                EditText titleText = FindViewById<EditText>(Resource.Id.goalTitleText);
-                EditText descriptionText = FindViewById<EditText>(Resource.Id.goalDescriptionText);
-                EditText startDate = FindViewById<EditText>(Resource.Id.startDateDate);
-                EditText endDate = FindViewById<EditText>(Resource.Id.endDateDate);
-                // Convert the text to DateTimes.
-                DateTime actualStartDate = DateTime.Now;
-                DateTime.TryParse(startDate.Text.ToString(), out actualStartDate);
-                DateTime actualEndDate = DateTime.Now;
-                DateTime.TryParse(endDate.Text.ToString(), out actualEndDate);
-                var info = LoginPage.addNewGoal(titleText.Text.ToString(), descriptionText.Text.ToString(), actualStartDate, actualEndDate);
-                CreateEvent();
-                string newGoal = titleText.ToString() + ", " + descriptionText.ToString() + ", " + actualStartDate + ", " + actualEndDate;
-                TextView goalView = FindViewById<TextView>(Resource.Id.textView2);
-                goalView.Append(newGoal);
-                goalView.Append(pullGoals());
+                
+                try
+                {
+                    EditText titleText = FindViewById<EditText>(Resource.Id.goalTitleText);
+                    EditText descriptionText = FindViewById<EditText>(Resource.Id.goalDescriptionText);
+                    EditText startDate = FindViewById<EditText>(Resource.Id.startDateDate);
+                    EditText endDate = FindViewById<EditText>(Resource.Id.endDateDate);
+                    // Convert the text to DateTimes.
+                    DateTime actualStartDate = DateTime.Now;
+                    DateTime.TryParse(startDate.Text.ToString(), out actualStartDate);
+                    DateTime actualEndDate = DateTime.Now;
+                    DateTime.TryParse(endDate.Text.ToString(), out actualEndDate);
+                    string titleString = titleText.Text.ToString();
+                    string desString = descriptionText.Text.ToString();
+                    var info = LoginPage.addNewGoal(titleString, desString, actualStartDate, actualEndDate);
+                    CreateEvent();
+                    string newGoal = titleText.ToString() + ", " + descriptionText.ToString() + ", " + actualStartDate + ", " + actualEndDate;
+                    TextView goalView = FindViewById<TextView>(Resource.Id.textView2);
+                    goalView.Append(newGoal);
+                    goalView.Append(pullGoals());
+                }
+                catch(Exception ex)
+                {
+                    string message = ex.InnerException.Message;
+                }
             };
            
         }

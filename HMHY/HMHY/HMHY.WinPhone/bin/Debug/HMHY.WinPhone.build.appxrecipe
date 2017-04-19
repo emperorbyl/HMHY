@@ -37,7 +37,7 @@
     <AppxPackagedFile Include="C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll">
       <PackagePath>FubarCoder.RestSharp.Portable.HttpClient.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY\bin\Debug\Newtonsoft.Json.dll">
+    <AppxPackagedFile Include="C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.WinPhone\bin\Debug\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.Net.Http.Primitives.dll">
