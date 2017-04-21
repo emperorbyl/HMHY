@@ -174,7 +174,6 @@ C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\re
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\res\drawable-xxxhdpi\icon.png
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\R.cs.flag
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\uploadflags.txt
-C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\HMHY.Droid.dll.mdb
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\HMHY.dll.mdb
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\Java.Interop.dll.mdb
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\Microsoft.CSharp.dll.mdb
@@ -280,5 +279,6 @@ C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\an
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\HMHY.Droid.dll.mdb
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\obj\Debug\HMHY.Droid.dll.mdb
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY.Droid\bin\Debug\HMHY.Droid.dll.mdb

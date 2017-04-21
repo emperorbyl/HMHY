@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.IO;
 using Android.Database.Sqlite;
 using System.Data.SqlClient;
 using System.Collections.Generic;
@@ -19,10 +20,8 @@ namespace HMHY.Droid
     {
         static string connection = "Data Source=database.db";
         static string dbConnection;
-
-        static string phoneConnection = DependencyService.Get<PhoneDB>().getLocalFilePath("SQLite.db3");
-        static string local = "../GitHub/HMHY/HMHY/";
-        //static string appConnection = Windows.ApplicationModel.Package.Current.InstalledLocation.ToString();
+        static string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+        static string phoneConnection = Path.Combine(path, "SQLite.db3");
 
         static LoginPage() { dbConnection = "hmhy-global.database.windows.net"; }
 

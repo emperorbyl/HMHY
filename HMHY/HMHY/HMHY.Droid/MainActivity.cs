@@ -46,7 +46,7 @@ namespace HMHY.Droid
                     DateTime.TryParse(endDate.Text.ToString(), out actualEndDate);
                     string titleString = titleText.Text.ToString();
                     string desString = descriptionText.Text.ToString();
-                    var info = LoginPage.addNewGoal(titleString, desString, actualStartDate, actualEndDate);
+                    //var info = LoginPage.addNewGoal(titleString, desString, actualStartDate, actualEndDate);
                     CreateEvent();
                     string newGoal = titleText.ToString() + ", " + descriptionText.ToString() + ", " + actualStartDate + ", " + actualEndDate;
                     TextView goalView = FindViewById<TextView>(Resource.Id.textView2);
