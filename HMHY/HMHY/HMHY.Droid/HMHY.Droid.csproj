@@ -172,6 +172,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AndroidCalendar.cs" />
+    <Compile Include="DBContentProvider.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
