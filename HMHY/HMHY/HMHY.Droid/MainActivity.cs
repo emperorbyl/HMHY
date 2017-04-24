@@ -8,15 +8,17 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Android.Provider;
-
+using Android.Database;
 namespace HMHY.Droid
 {
 	[Activity (Label = "HMHY.Droid", MainLauncher = true, Icon = "@drawable/icon")]
 	public class MainActivity : Activity
 	{
-		int count = 1;
-
-		protected override void OnCreate (Bundle bundle)
+        ListView listView;
+        int count = 1;
+        ICursor cursor;
+        SimpleCursorAdapter adapter;
+        protected override void OnCreate (Bundle bundle)
 		{
 
 
@@ -29,12 +31,41 @@ namespace HMHY.Droid
 			// Get our button from the layout resource,
 			// and attach an event to it
 			Button button = FindViewById<Button> (Resource.Id.AddGoal);
-            // Get all of the information entered by the user.
+            string[] projection = new string[] { DBContentViewer.InterfaceConsts.Id, DBContentViewer.InterfaceConsts.Name };
+            string[] fromColumns = new string[] { DBContentViewer.InterfaceConsts.Name };
+            int[] toControlIds = new int[] { Android.Resource.Id.Text1 };
+
             
+            cursor = ManagedQuery(DBContentViewer.CONTENT_URI, projection, null, null, null);
+            var loader = new CursorLoader(this,
+                DBContentViewer.CONTENT_URI, projection, null, null, null);
+            cursor = (ICursor)loader.LoadInBackground();
+
+            // create a SimpleCursorAdapter
+            //adapter = new SimpleCursorAdapter(this, Android.Resource.Layout.SimpleListItem1, cursor,
+              //  fromColumns, toControlIds);
+
+           // listView.Adapter = adapter;
             button.Click += (object sender, EventArgs e) => {
                 
                 try
                 {
+                    // Create the necessary query for the gui.
+                    string[] project = new string[] { "name" };
+                    // This returns a null path right now because there is no 0 id.
+                    var uri = Android.Net.Uri.WithAppendedPath(DBContentViewer.CONTENT_URI, "0");
+
+                    ICursor goalCursor = ContentResolver.Query(uri, project, null, new string[] { "0"}, null);
+
+                    string text = "";
+                    if (goalCursor.MoveToFirst())
+                    {
+                        text = goalCursor.GetInt(0) + " " + goalCursor.GetString(1);
+                        Android.Widget.Toast.MakeText(this, text, Android.Widget.ToastLength.Short).Show();
+                    }
+
+                    goalCursor.Close();
+                    // Get all of the information entered by the user.
                     EditText titleText = FindViewById<EditText>(Resource.Id.goalTitleText);
                     EditText descriptionText = FindViewById<EditText>(Resource.Id.goalDescriptionText);
                     EditText startDate = FindViewById<EditText>(Resource.Id.startDateDate);
