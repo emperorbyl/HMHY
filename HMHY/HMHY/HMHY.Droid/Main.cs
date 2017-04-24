@@ -3,7 +3,7 @@ using System.Data;
 using Android.Database.Sqlite;
 using System.Data.SqlClient;
 using System.Collections.Generic;
-using Windows.Storage;
+
 
 
 
@@ -15,7 +15,7 @@ namespace HMHY.Droid
     public static class LoginPage
     {
         static string connection = "Data Source=database.db";
-        static string phoneConnection = ApplicationData.Current.LocalFolder.Path.ToString();
+        static string phoneConnection = "";//ApplicationData.Current.LocalFolder.Path.ToString();
         public static bool getUserCredentials(string username)
         {
             bool privledge = false;
