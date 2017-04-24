@@ -1,3 +1,11 @@
+HMHY.Droid.DBContentViewer, HMHY.Droid;md5d9dfeeaebbd78a80e6c84a0636332a77.DBContentViewer
+HMHY.Droid.DBContentViewer, HMHY.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d9dfeeaebbd78a80e6c84a0636332a77.DBContentViewer
+HMHY.Droid.DBContentViewer;md5d9dfeeaebbd78a80e6c84a0636332a77.DBContentViewer
+hmhy.droid.DBContentViewer;md5d9dfeeaebbd78a80e6c84a0636332a77.DBContentViewer
+HMHY.Droid.DBHelper, HMHY.Droid;md5d9dfeeaebbd78a80e6c84a0636332a77.DBHelper
+HMHY.Droid.DBHelper, HMHY.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d9dfeeaebbd78a80e6c84a0636332a77.DBHelper
+HMHY.Droid.DBHelper;md5d9dfeeaebbd78a80e6c84a0636332a77.DBHelper
+hmhy.droid.DBHelper;md5d9dfeeaebbd78a80e6c84a0636332a77.DBHelper
 HMHY.Droid.MainActivity, HMHY.Droid;md5d9dfeeaebbd78a80e6c84a0636332a77.MainActivity
 HMHY.Droid.MainActivity, HMHY.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d9dfeeaebbd78a80e6c84a0636332a77.MainActivity
 HMHY.Droid.MainActivity;md5d9dfeeaebbd78a80e6c84a0636332a77.MainActivity

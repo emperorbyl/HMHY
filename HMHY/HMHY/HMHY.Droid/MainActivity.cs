@@ -48,7 +48,7 @@ namespace HMHY.Droid
                     string desString = descriptionText.Text.ToString();
                     //var info = LoginPage.addNewGoal(titleString, desString, actualStartDate, actualEndDate);
                     //CreateEvent();
-                    string newGoal = titleText.ToString() + ", " + descriptionText.ToString() + ", " + actualStartDate + ", " + actualEndDate;
+                    string newGoal = titleText.Text.ToString() + ", " + descriptionText.Text.ToString() + ", " + actualStartDate + ", " + actualEndDate;
                     TextView goalView = FindViewById<TextView>(Resource.Id.textView2);
                     goalView.Append(newGoal);
                     //goalView.Append(pullGoals());
