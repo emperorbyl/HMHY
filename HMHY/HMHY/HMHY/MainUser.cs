@@ -7,7 +7,7 @@ using System.Xml.Serialization;
 
 namespace HMHY
 {
-    class MainUser
+    public  class MainUser
     {
         [XmlElement("userId")]
         public int userId { get; set; }

@@ -11,9 +11,8 @@ namespace hmhyWebservice2._0.Models
 {
     using System;
     using System.Data.Entity;
-    using System.Data.Entity.Core.EntityClient;
     using System.Data.Entity.Infrastructure;
-
+    
     public partial class hmhyGlobalDbEntities1 : DbContext
     {
         public hmhyGlobalDbEntities1()

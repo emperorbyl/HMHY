@@ -2,7 +2,7 @@
 
 namespace HMHY
 {
-    class Task
+    public class Task
     {
 
         public string taskName { get; set; }

@@ -129,6 +129,12 @@ C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System\en-US\System.
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.Core\en-US\System.Core.resw
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.Core\en-US\System.Linq.resw
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.Core\en-US\System.Linq.Expressions.resw
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.ComponentModel.DataAnnotations.pri
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.ComponentModel.DataAnnotations\qualifiers.txt
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.pri
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System\qualifiers.txt
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.Core.pri
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.Core\qualifiers.txt
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.ComponentModel.DataAnnotations\layout.resfiles
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.ComponentModel.DataAnnotations\layout.resfiles.intermediate
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.ComponentModel.DataAnnotations\Resources.resfiles
@@ -137,8 +143,6 @@ C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.ComponentMode
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.ComponentModel.DataAnnotations\pri.resfiles.intermediate
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.ComponentModel.DataAnnotations\priconfig.xml
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.ComponentModel.DataAnnotations\priconfig.xml.intermediate
-C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.ComponentModel.DataAnnotations.pri
-C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.ComponentModel.DataAnnotations\qualifiers.txt
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System\layout.resfiles
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System\layout.resfiles.intermediate
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System\Resources.resfiles
@@ -147,8 +151,6 @@ C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System\pri.resfiles
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System\pri.resfiles.intermediate
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System\priconfig.xml
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System\priconfig.xml.intermediate
-C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.pri
-C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System\qualifiers.txt
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.Core\layout.resfiles
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.Core\layout.resfiles.intermediate
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.Core\Resources.resfiles
@@ -157,5 +159,3 @@ C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.Core\pri.resf
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.Core\pri.resfiles.intermediate
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.Core\priconfig.xml
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.Core\priconfig.xml.intermediate
-C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.Core.pri
-C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY.WinPhone\obj\Debug\System.Core\qualifiers.txt

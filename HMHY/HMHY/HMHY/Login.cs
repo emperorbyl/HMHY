@@ -2,7 +2,7 @@
 
 namespace HMHY
 {
-    class Login
+    public class Login
     {
 
         private string databaseId { get; set; }

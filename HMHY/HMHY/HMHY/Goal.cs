@@ -5,7 +5,7 @@ using System.Xml.Serialization;
 
 namespace HMHY
 {
-    class Goal
+    public class Goal
     {
 
         public string title { get; set; }

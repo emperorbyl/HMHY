@@ -2,7 +2,7 @@
 
 namespace HMHY
 {
-    class Note
+    public class Note
     {
 
         public string title { get; set; }

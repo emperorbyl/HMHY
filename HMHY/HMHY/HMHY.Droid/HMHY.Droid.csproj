@@ -67,7 +67,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RestApiService.cs" />
+    <Compile Include="SyncService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
