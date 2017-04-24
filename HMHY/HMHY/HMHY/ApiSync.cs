@@ -13,7 +13,7 @@ namespace HMHY
     /// <summary>
     /// This class handles syncing the local phone db to the server db. 
     /// </summary>
-    class ApiSync
+    public class ApiSync
     {
         public Core core;
         public ApiSync() { core = new Core(); }

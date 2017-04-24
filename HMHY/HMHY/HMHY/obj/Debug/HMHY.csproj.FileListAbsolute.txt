@@ -52,7 +52,3 @@ C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.Xml.xml
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.Core.xml
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.dll.mdb
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll.mdb
-C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.dll.mdb
-C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll.mdb
-C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.dll.mdb
-C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll.mdb

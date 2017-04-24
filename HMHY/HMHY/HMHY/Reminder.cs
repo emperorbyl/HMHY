@@ -2,7 +2,7 @@
 
 namespace HMHY
 {
-    class Reminder
+    public class Reminder
     {
 
         public string title { get; set; }
