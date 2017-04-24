@@ -65,6 +65,18 @@ namespace HMHY.Droid
 
             IListAdapter ListAdapter = adapter;
         }
+
+        private void SyncDatabase()
+        {
+            /* Check for recent user password change. If no user is stored in the local db, prompt login
+            *
+            * Check for recent goal changes to the users goal since last login
+            * 
+            * Update other changes
+            * 
+            * Changes on the phone trump local changes
+            */
+        }
 	}
 }
 
