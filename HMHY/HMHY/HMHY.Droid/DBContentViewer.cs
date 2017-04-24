@@ -11,14 +11,34 @@ using Android.Views;
 using Android.Widget;
 using Android.Database;
 using Android.Net;
+using Android.Database.Sqlite;
+
 
 namespace HMHY.Droid
 {
     class DBContentViewer : ContentProvider
     {
+        public const string AUTHORITY = "com.xamarin.sample.DBContentViewer";
+        static string BASE_PATH = "Goals";
+        public static readonly Android.Net.Uri CONTENT_URI = Android.Net.Uri.Parse("content://" + AUTHORITY + "/" + BASE_PATH);
+
+        // MIME types used for getting a list, or a single vegetable
+        public const string VEGETABLES_MIME_TYPE = ContentResolver.CursorDirBaseType + "/vnd.com.xamarin.sample.Vegetables";
+        public const string VEGETABLE_MIME_TYPE = ContentResolver.CursorItemBaseType + "/vnd.com.xamarin.sample.Vegetables";
+
+        // Column names
+        public new static class InterfaceConsts
+        {
+            public const string Id = "_id";
+            public const string Name = "name";
+        }
+
+        DBHelper goalDB;
+
         public override bool OnCreate()
         {
-            throw new NotImplementedException();
+            goalDB = new DBHelper(Context);
+            return true;
         }
 
         public override string GetType(Android.Net.Uri uri)
