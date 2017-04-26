@@ -9,6 +9,7 @@ using Android.Widget;
 using Android.OS;
 using Android.Provider;
 using Android.Database;
+
 namespace HMHY.Droid
 {
 	[Activity (Label = "HMHY.Droid", MainLauncher = true, Icon = "@drawable/icon")]
@@ -18,6 +19,7 @@ namespace HMHY.Droid
         int count = 1;
         ICursor cursor;
         SimpleCursorAdapter adapter;
+        static string phoneConnection = "";
         protected override void OnCreate (Bundle bundle)
 		{
 
@@ -50,12 +52,14 @@ namespace HMHY.Droid
                 
                 try
                 {
+                    
                     // Create the necessary query for the gui.
                     string[] project = new string[] { "name" };
                     // This returns a null path right now because there is no 0 id.
-                    var uri = Android.Net.Uri.WithAppendedPath(DBContentViewer.CONTENT_URI, "0");
-
-                    ICursor goalCursor = ContentResolver.Query(uri, project, null, new string[] { "0"}, null);
+                    var uri = Android.Net.Uri.WithAppendedPath(DBContentViewer.CONTENT_URI, DBContentViewer.InterfaceConsts.Id);
+                    phoneConnection = uri.Path;
+                    
+                    /*ICursor goalCursor = ContentResolver.Query(uri, project, null, new string[] {DBContentViewer.InterfaceConsts.Id, null);
 
                     string text = "";
                     if (goalCursor.MoveToFirst())
@@ -64,7 +68,7 @@ namespace HMHY.Droid
                         Android.Widget.Toast.MakeText(this, text, Android.Widget.ToastLength.Short).Show();
                     }
 
-                    goalCursor.Close();
+                    goalCursor.Close();*/
                     // Get all of the information entered by the user.
                     EditText titleText = FindViewById<EditText>(Resource.Id.goalTitleText);
                     EditText descriptionText = FindViewById<EditText>(Resource.Id.goalDescriptionText);
@@ -77,10 +81,11 @@ namespace HMHY.Droid
                     DateTime.TryParse(endDate.Text.ToString(), out actualEndDate);
                     string titleString = titleText.Text.ToString();
                     string desString = descriptionText.Text.ToString();
-                    //var info = LoginPage.addNewGoal(titleString, desString, actualStartDate, actualEndDate);
+                    //var info = LoginPage.addNewGoal(titleString, desString, actualStartDate, actualEndDate, phoneConnection);
                     //CreateEvent();
                     string newGoal = titleText.Text.ToString() + ", " + descriptionText.Text.ToString() + ", " + actualStartDate + ", " + actualEndDate;
                     TextView goalView = FindViewById<TextView>(Resource.Id.textView2);
+                    goalView.SetText("", TextView.BufferType.Normal);
                     goalView.Append(newGoal);
                     //goalView.Append(pullGoals());
                 }
@@ -115,7 +120,7 @@ namespace HMHY.Droid
         {
             string user = "emperorbyl";
             string allGoals = "";
-            System.Collections.Generic.List<string> goalList = LoginPage.viewGoals(user);
+            System.Collections.Generic.List<string> goalList = LoginPage.viewGoals(user, phoneConnection);
             foreach (string goal in goalList)
                 allGoals += goal;
             return allGoals;

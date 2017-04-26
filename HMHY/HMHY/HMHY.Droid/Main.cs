@@ -18,12 +18,8 @@ namespace HMHY.Droid
 
     public static class LoginPage
     {
-        static string connection = "Data Source=database.db";
-        static string dbConnection;
-        static string path = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-        static string phoneConnection = Path.Combine(path, "SQLite.db3");
-
-        static LoginPage() { dbConnection = "hmhy-global.database.windows.net"; }
+        
+        
 
         public static bool getUserCredentials(string username)
         {
@@ -38,7 +34,7 @@ namespace HMHY.Droid
             return privledge;
         }
 
-        public static UserEventInfo addNewGoal(string titleA, string descriptionA, DateTime startTimeA, DateTime endTimeA)
+        public static UserEventInfo addNewGoal(string titleA, string descriptionA, DateTime startTimeA, DateTime endTimeA, string phoneConnection)
         {
             
             //TODO
@@ -68,7 +64,7 @@ namespace HMHY.Droid
             return info;
         }
 
-        public static UserReminderInfo addNewReminder(string message, DateTime remindTime)
+        public static UserReminderInfo addNewReminder(string message, DateTime remindTime, string phoneConnection)
         {
             // Open the connection for the query.
             SQLiteDatabase db = SQLiteDatabase.OpenDatabase(phoneConnection, null, DatabaseOpenFlags.OpenReadwrite);
@@ -89,7 +85,7 @@ namespace HMHY.Droid
             return info;
         }
 
-        public static void addNewNote(string title, int userID, string body)
+        public static void addNewNote(string title, int userID, string body, string phoneConnection)
         {
             // Open the connection for the query.
             SQLiteDatabase db = SQLiteDatabase.OpenDatabase(phoneConnection, null, DatabaseOpenFlags.OpenReadwrite);
@@ -105,7 +101,7 @@ namespace HMHY.Droid
             db.Insert(query, "id, title, userId, body", values);
         }
 
-        public static List<string> viewGoals(string userName)
+        public static List<string> viewGoals(string userName, string phoneConnection)
         {
             List<string> allDaGoals = new List<string>();
             bool next = false;
@@ -133,7 +129,7 @@ namespace HMHY.Droid
             return allDaGoals;
         }
 
-        public static List<string> viewNotes (string goalName)
+        public static List<string> viewNotes (string goalName, string phoneConnection)
         {
             List<string> allDaNotes = new List<string>();
             bool next = false;
@@ -161,7 +157,7 @@ namespace HMHY.Droid
             return allDaNotes;
         }
 
-        public static void addNewUser(string userName, bool priv)
+        public static void addNewUser(string userName, bool priv, string phoneConnection)
         {
             // Open the connection for the query.
             SQLiteDatabase db = SQLiteDatabase.OpenDatabase(phoneConnection, null, DatabaseOpenFlags.OpenReadwrite);

@@ -22,7 +22,7 @@ namespace HMHY.Droid
         static string BASE_PATH = "Goals";
         public static readonly Android.Net.Uri CONTENT_URI = Android.Net.Uri.Parse("content://" + AUTHORITY + "/" + BASE_PATH);
 
-        // MIME types used for getting a list, or a single vegetable
+        // MIME types used for getting a list, or a single goal
         public const string GOALS_MIME_TYPE = ContentResolver.CursorDirBaseType + "/vnd.com.xamarin.sample.Goals";
         public const string GOAL_MIME_TYPE = ContentResolver.CursorItemBaseType + "/vnd.com.xamarin.sample.Goals";
 
