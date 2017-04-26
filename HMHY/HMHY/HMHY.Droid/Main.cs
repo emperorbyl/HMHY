@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.IO;
 using Android.Database.Sqlite;
 using System.Data.SqlClient;
 using System.Collections.Generic;
@@ -14,8 +15,6 @@ namespace HMHY.Droid
 
     public static class LoginPage
     {
-        static string connection = "Data Source=database.db";
-        static string phoneConnection = "";//ApplicationData.Current.LocalFolder.Path.ToString();
         public static bool getUserCredentials(string username)
         {
             bool privledge = false;
@@ -29,9 +28,9 @@ namespace HMHY.Droid
             return privledge;
         }
 
-        public static UserEventInfo addNewGoal(string titleA, string descriptionA, DateTime startTimeA, DateTime endTimeA)
+        public static UserEventInfo addNewGoal(string titleA, string descriptionA, DateTime startTimeA, DateTime endTimeA, string phoneConnection)
         {
-            
+
             //TODO
             //Figure out how to access the database on a phone. This will be used instead of hmhy-global.
             // Open the connection for the query.
@@ -49,7 +48,7 @@ namespace HMHY.Droid
             db.Insert(query, "id, title, goalDescription, StartTime, EndTime", values);
             // Add the goal as an event to the calendar.
             AndroidCalendar userCalendar = new AndroidCalendar();
-            userCalendar.AddEvent("0", titleA, startTimeA, endTimeA,descriptionA);
+            userCalendar.AddEvent("0", titleA, startTimeA, endTimeA, descriptionA);
             UserEventInfo info = new UserEventInfo();
             info.Id = "0";
             info.Title = titleA;
@@ -59,7 +58,7 @@ namespace HMHY.Droid
             return info;
         }
 
-        public static UserReminderInfo addNewReminder(string message, DateTime remindTime)
+        public static UserReminderInfo addNewReminder(string message, DateTime remindTime, string phoneConnection)
         {
             // Open the connection for the query.
             SQLiteDatabase db = SQLiteDatabase.OpenDatabase(phoneConnection, null, DatabaseOpenFlags.OpenReadwrite);
@@ -80,7 +79,7 @@ namespace HMHY.Droid
             return info;
         }
 
-        public static void addNewNote(string title, int userID, string body)
+        public static void addNewNote(string title, int userID, string body, string phoneConnection)
         {
             // Open the connection for the query.
             SQLiteDatabase db = SQLiteDatabase.OpenDatabase(phoneConnection, null, DatabaseOpenFlags.OpenReadwrite);
@@ -96,7 +95,7 @@ namespace HMHY.Droid
             db.Insert(query, "id, title, userId, body", values);
         }
 
-        public static List<string> viewGoals(string userName)
+        public static List<string> viewGoals(string userName, string phoneConnection)
         {
             List<string> allDaGoals = new List<string>();
             bool next = false;
@@ -106,7 +105,7 @@ namespace HMHY.Droid
             FROM MainUser us
             JOIN Goal gl ON gl.id = us.goalId
             WHERE us.name LIKE @userName";
-            string []values;
+            string[] values;
             values = new string[1];
             values[0] = userName;
             // Execute the query.
@@ -124,7 +123,7 @@ namespace HMHY.Droid
             return allDaGoals;
         }
 
-        public static List<string> viewNotes (string goalName)
+        public static List<string> viewNotes(string goalName, string phoneConnection)
         {
             List<string> allDaNotes = new List<string>();
             bool next = false;
@@ -152,7 +151,7 @@ namespace HMHY.Droid
             return allDaNotes;
         }
 
-        public static void addNewUser(string userName, bool priv)
+        public static void addNewUser(string userName, bool priv, string phoneConnection)
         {
             // Open the connection for the query.
             SQLiteDatabase db = SQLiteDatabase.OpenDatabase(phoneConnection, null, DatabaseOpenFlags.OpenReadwrite);
