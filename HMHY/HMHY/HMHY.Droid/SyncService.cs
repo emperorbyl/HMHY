@@ -19,22 +19,35 @@ namespace HMHY.Droid
     [Service]
     class SyncService : Service
     {
-       
-
+        ApiSync syncService;
+        Core core;
         public SyncService()
         {
-
+            syncService = new ApiSync();
+            core = new Core();
         }
 
 
         // Sync dbs on startup.
         public override void OnCreate()
         {
-            // Check for local changes
-            //List<Goal> goals = LoginPage.viewGoals("test");
-            // Check for remote changes
+            try
+            {
+                // Check for local changes
+                List<DbGoal> phGoals = new List<DbGoal>();
+                phGoals.Add(new DbGoal { deadline = Convert.ToDateTime("04/25/2017"), description = "test", id = 1, reminderId = 0, startDate = DateTime.Now, title = "test1", Type = DbGoal.TYPE.breaking, TypeId = 0 });
+                List<DbGoal> dbGoals = syncService.GetTable<DbGoal>(core.GoalApiGetRequest);
 
-            // Compare changes 
+                // Check for remote changes
+
+                // Compare changes 
+
+            }
+            catch(Exception e)
+            {
+                var message = e.Message;
+                // log error to log
+            }
         }
 
         public override IBinder OnBind(Intent intent)

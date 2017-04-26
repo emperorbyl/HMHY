@@ -7,39 +7,33 @@ using System.Threading.Tasks;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Xml;
-using System.Xml.Linq;
-using System.Xml.Serialization;
-
-using RestSharp.Portable;
-using RestSharp.Portable.HttpClient;
 
 namespace HMHY
 { 
     class HttpRequestService
     {
-        public RestClient Client;
+        public HttpClient Client;
         Core core;
         public HttpRequestService()
         {
             core = new Core();
-            Client = new RestClient();
-            Client.BaseUrl = core.ApiLocation;
+            Client = new HttpClient();
+            Client.BaseAddress = core.ApiLocation;
         }
 
-        public RestRequest MakeConnection(string path, Method connectionType)
+        /// <summary>
+        /// Creates a new http request message.
+        /// </summary>
+        /// <param name="resource"></param>
+        /// <param name="method"></param>
+        /// <returns></returns>
+        public HttpWebRequest MakeRequest(string resource, string method)
         {
-            RestRequest request;
-            string result = string.Empty;
-            try
-            {          
-                request = new RestRequest(path);
-                request.AddHeader("Accept", "Application/xml");
-                request.Method = connectionType;
-            }
-            catch (Exception e) { return null; }
+            HttpWebRequest req = (HttpWebRequest)HttpWebRequest.Create(new Uri(resource));
+            req.ContentType = "application/json";
+            req.Method = method;
 
-            return request;
+            return req;
         }
     }
 }

@@ -16,13 +16,16 @@ namespace HMHY.Droid
 	{
 		int count = 1;
 
+        SyncService syncService;
+
 		protected override void OnCreate (Bundle bundle)
 		{
 
 
 			base.OnCreate (bundle);
-            
-         
+
+            syncService = new SyncService();
+            StartService(new Intent(this, syncService.GetType()));
 
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.Main);

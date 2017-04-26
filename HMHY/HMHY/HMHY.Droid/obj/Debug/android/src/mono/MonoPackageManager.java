@@ -102,10 +102,7 @@ class MonoPackageManager_Resources {
 		"HMHY.dll",
 		"RestSharp.dll",
 		"Windows.winmd",
-		"FubarCoder.RestSharp.Portable.Core.dll",
 		"Newtonsoft.Json.dll",
-		"FubarCoder.RestSharp.Portable.HttpClient.dll",
-		"System.Net.Http.Primitives.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

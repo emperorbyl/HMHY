@@ -31,29 +31,16 @@ namespace HMHY
 
     }
 
-    [XmlRoot("ArrayOfGoal")]
-    class DbGoalList
+    public class DbGoal
     {
-        public DbGoalList() { Items = new List<DbGoal>(); }
-        [XmlElement("Goal")]
-        public List<DbGoal> Items { get; set; }
-    }
-
-    class DbGoal
-    {
-        [XmlElement("Title")]
         public string title { get; set; }
-        [XmlElement("Note")]
         public string description { get; set; }
-        [XmlElement("Deadline")]
         public DateTime deadline { get; set; }
         public enum FREQUENCY { hourly, daily, weekly }
         [Required]
-        [XmlElement("goalId")]
         public int id { get; set; }
         public enum TYPE { making, breaking }
         [Required]
-        [XmlElement("GoalType")]
         public virtual int TypeId { get; set; }
         [EnumDataType(typeof(TYPE))]
         public TYPE Type
@@ -67,9 +54,7 @@ namespace HMHY
                 this.TypeId = (int)value;
             }
         }
-        [XmlElement("ReminderId")]
         public int reminderId { get; set; }
-        [XmlElement("StartDate")]
         public DateTime startDate { get; set; }
     }
 }

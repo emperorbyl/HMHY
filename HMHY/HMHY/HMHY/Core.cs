@@ -25,6 +25,7 @@ namespace HMHY
         {
             ApiLocation = new Uri("http://ec2-54-67-67-41.us-west-1.compute.amazonaws.com/api/");
             MainUserApiGetRequest = "MainUser";
+            GoalApiGetRequest = "Goal";
         }
         #endregion
     }
