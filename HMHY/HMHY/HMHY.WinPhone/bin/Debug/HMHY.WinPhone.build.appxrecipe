@@ -31,14 +31,8 @@
     <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll">
       <PackagePath>HMHY.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\FubarCoder.RestSharp.Portable.Core.dll">
-      <PackagePath>FubarCoder.RestSharp.Portable.Core.dll</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.ComponentModel.DataAnnotations.dll">
       <PackagePath>System.ComponentModel.DataAnnotations.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\FubarCoder.RestSharp.Portable.HttpClient.dll">
-      <PackagePath>FubarCoder.RestSharp.Portable.HttpClient.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -48,9 +42,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.Core.dll">
       <PackagePath>System.Core.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.Net.Http.Primitives.dll">
-      <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.Xml.dll">
       <PackagePath>System.Xml.dll</PackagePath>

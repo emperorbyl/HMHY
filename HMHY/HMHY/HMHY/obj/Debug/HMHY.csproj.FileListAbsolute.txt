@@ -42,6 +42,14 @@ C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.ComponentModel.DataAnn
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.xml
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.Xml.xml
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\System.Core.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\FubarCoder.RestSharp.Portable.Encodings.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\FubarCoder.RestSharp.Portable.WebRequest.dll
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\FubarCoder.RestSharp.Portable.Encodings.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\FubarCoder.RestSharp.Portable.WebRequest.xml
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.dll.mdb
+C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll.mdb
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\obj\Debug\HMHY.dll.mdb
 C:\Users\Xaber\Repos\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll.mdb
 C:\Users\benja\OneDrive\Documentos\GitHub\HMHY\HMHY\HMHY\HMHY\bin\Debug\HMHY.dll.config

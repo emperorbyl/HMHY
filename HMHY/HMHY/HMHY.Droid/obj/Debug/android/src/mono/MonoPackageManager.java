@@ -108,6 +108,8 @@ class MonoPackageManager_Resources {
 		"SQLitePCLRaw.lib.e_sqlite3.dll",
 		"SQLitePCLRaw.provider.e_sqlite3.dll",
 		"Windows.winmd",
+<<<<<<< HEAD
+=======
 		"Xamarin.Android.Support.Animated.Vector.Drawable.dll",
 		"Xamarin.Android.Support.Compat.dll",
 		"Xamarin.Android.Support.Core.UI.dll",
@@ -129,9 +131,8 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Xaml.dll",
 		"HMHY.dll",
 		"FubarCoder.RestSharp.Portable.Core.dll",
+>>>>>>> master
 		"Newtonsoft.Json.dll",
-		"FubarCoder.RestSharp.Portable.HttpClient.dll",
-		"System.Net.Http.Primitives.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

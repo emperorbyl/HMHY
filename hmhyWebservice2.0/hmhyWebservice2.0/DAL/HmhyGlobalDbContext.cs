@@ -13,7 +13,7 @@ namespace hmhyWebservice2._0.DAL
     {
         public HmhyGlobalDbContext() : base("hmhyGlobalDbEntities")
         {
-                Database.Connection.ConnectionString = Database.Connection.ConnectionString.Replace("secret", @"!Xc-4JKK");
+            Database.Connection.ConnectionString = Database.Connection.ConnectionString.Replace("secret", @"!Xc-4JKK");
             // Adding this just in case an update overwrites entity, we have a backup. 
             EntityConnectionStringBuilder builder = new EntityConnectionStringBuilder("metadata=res://*/Models.HmhyGlobalDb.csdl|res://*/Models.HmhyGlobalDb.ssdl|res://*/Models.HmhyGlobalDb.msl;provider=System.Data.SqlClient;provider connection string=';data source=hmhyglobaldb.csxgrhmw0ty8.us-west-1.rds.amazonaws.com;initial catalog=hmhyGlobalDb;persist security info=True;user id=hmhy_admin;password=!Xc-4JKK;multipleactiveresultsets=True;application name=EntityFramework';");
             Database.Connection.ConnectionString = builder.ProviderConnectionString;
